@@ -304,7 +304,21 @@
       
         
           
-            
+            <h1 id="dota-2-api-介绍"><a href="#dota-2-api-介绍" class="headerlink" title="dota 2 api 介绍"></a>dota 2 api 介绍</h1><p>Dota 2 提供了有关比赛记录和玩家数据的API, 以供开发者用来开发相关软件<a href="http://dotamax.com" title="dotamax" target="_blank" rel="external">Dotamax</a>和<a href="http://dotabuff.com" title="dotabuff" target="_blank" rel="external">Dotabuff</a>.</p>
+<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><p>在使用dota2 api之前,需要先查看使用规定<a href="http://steamcommunity.com/dev/apiterms" target="_blank" rel="external">Steam Web API Terms of Use</a><br>如果没有Steam账户,请先申请一个Steam账户,然后去<a href="http://steamcommunity.com/dev/apikey" target="_blank" rel="external">http://steamcommunity.com/dev/apikey</a>申请一个开发者使用的apikey.</p>
+<h1 id="Api"><a href="#Api" class="headerlink" title="Api"></a>Api</h1><p>Dota 2 Api返回的数据格式分为json和xml两种,开发者可以根据自己的情况来选择,这点在后面api参数会有介绍.</p>
+<p>一些常用的api如下<br><figure class="highlight gcode"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">(GetMatchHistory)</span>              https:<span class="comment">//api.steampowered.com/IDOTA2Match_570/GetMatchHistory/v001/</span></span><br><span class="line"><span class="comment">(GetMatchDetails)</span>              https:<span class="comment">//api.steampowered.com/IDOTA2Match_570/GetMatchDetails/v001/</span></span><br><span class="line"><span class="comment">(GetHeroes)</span>                    https:<span class="comment">//api.steampowered.com/IEconDOTA2_570/GetHeroes/v0001/</span></span><br><span class="line"><span class="comment">(GetPlayerSummaries)</span>           https:<span class="comment">//api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/</span></span><br><span class="line"><span class="comment">(EconomySchema)</span>                https:<span class="comment">//api.steampowered.com/IEconItems_570/GetSchema/v0001/</span></span><br><span class="line"><span class="comment">(GetLeagueListing)</span>             https:<span class="comment">//api.steampowered.com/IDOTA2Match_570/GetLeagueListing/v0001/</span></span><br><span class="line"><span class="comment">(GetLiveLeagueGames)</span>           https:<span class="comment">//api.steampowered.com/IDOTA2Match_570/GetLiveLeagueGames/v0001/    </span></span><br><span class="line"><span class="comment">(GetMatchHistoryBySequenceNum)</span> https:<span class="comment">//api.steampowered.com/IDOTA2Match_570/GetMatchHistoryBySequenceNum/v0001/</span></span><br><span class="line"><span class="comment">(GetTeamInfoByTeamID)</span>          https:<span class="comment">//api.steampowered.com/IDOTA2Match_570/GetTeamInfoByTeamID/v001/</span></span><br></pre></td></tr></table></figure></p>
+<p>全部的Steam Web Api参见链接<a href="http://wiki.teamfortress.com/wiki/WebAPI" target="_blank" rel="external">http://wiki.teamfortress.com/wiki/WebAPI</a>(不是很清楚为什么挂在team fortress的下面..)</p>
+<p>##GetMatchHistory</p>
+<p>##GetMatchDetails</p>
+<p>##GetHeroes</p>
+<p>##GetPlayerSummaries</p>
+<p>##EconomySchema</p>
+<p>##GetLeagueListing</p>
+<p>##GetLiveLeagueGames</p>
+<p>##GetMatchHistoryBySequenceNum</p>
+<p>##GetTeamInfoByTeamID</p>
+
           
         
       
