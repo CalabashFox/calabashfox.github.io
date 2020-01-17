@@ -87,21 +87,17 @@
 
   <title> 葫芦葫芦狐狸 </title>
 </head>
-liframealv  testiframealv
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
-  <script type="text/javascript" src="//testiframealv.comers.se/pages/js/iframe/comers-iframe-integration.1.0.js?ver=1.0"></script>
-  <script type="text/javascript">
-		(function(){
-		ComersIframeIntegration.create({
-		        comersSiteBaseUrl: 'https://testiframealv.comers.se',
-		        bookingPageUrl: 'https://calabashfox.github.io/',
-			debug: true
-	        });
-	})();	
-		</script>
-<iframe id="comersIframeContainer" src="//testiframealv.comers.se/pages/showpage.jsp?page_cd=I.CALENDAR&amp;flow_cd=IFRAME&amp;fixProductType=true&amp;productType=COT&amp;productPart_cd=VILLAN&amp;fixProductPart_cd=true  " scrolling="no" frameborder="0" width="900" height="750" style="overflow: hidden; height: 328px;"></iframe>
-  
-
+	<script src="https://llek.comers.se/pages/v2/js/widget-v2.js"></script>
+<script type="text/javascript">
+	(function(){
+	SearchFormWidget.create({
+		    containerId: 'searchFormContainer',
+			flow_cd: 'IFRAME',
+			baseUrl: '//llek.comers.se'
+		});
+	})();
+	</script>
+<div id="searchFormContainer"></div>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
