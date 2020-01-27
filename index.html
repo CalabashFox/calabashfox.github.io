@@ -30,32 +30,8 @@
     <meta name="twitter:description" content="葫芦葫芦狐狸">
 
     <title> 葫芦葫芦狐狸 </title>
-</head>
-<script src="//llek.comers.se/pages/js/iframe/comers-iframe-integration.1.0.js" type="text/javascript"></script>
-<script type="text/javascript">
-    (function() {
-        ComersIframeIntegration.create({
-            comersSiteBaseUrl: 'https://llek.comers.se',
-            bookingPageUrl: 'calabashfox.github.io',
-            debug: true
-        });
-    })();
-</script>
-<script src="//llek.comers.se/pages/js/iframeResizer/js/iframeResizer.min.js" type="text/javascript"></script>
-
-<iframe id="comersIframeContainer" src="" scrolling="no" frameBorder="0"></iframe>
-<script type="text/javascript">
-    var iframeUrl = sessionStorage.getItem('searchUrl');
-    if (iframeUrl === null) {
-        iframeUrl = '//llek.comers.se/pages/showpage.jsp';
-    } else {
-        sessionStorage.removeItem('searchUrl');
-    }
-    document.getElementById('comersIframeContainer').src = iframeUrl;
-    iFrameResize({
-        log: false
-    }, '#comersIframeContainer');
-</script>
+</head><script src="//testlek.comers.se/pages/js/iframe/comers-iframe-integration.1.0.js?v=1.0" type="text/javascript"></script>
+<script type="text/javascript">(function() {ComersIframeIntegration.create({ comersSiteBaseUrl: 'https://testlek.comers.se', bookingPageUrl: 'testiframealv.comers.se',debug: true });})();</script><script src="//testlek.comers.se/pages/js/iframeResizer/js/iframeResizer.min.js" type="text/javascript"></script><iframe id="comersIframeContainer" src="" scrolling="no" frameBorder="0"></iframe><script type="text/javascript">var iframeUrl = sessionStorage.getItem('searchUrl');if (iframeUrl === null) {iframeUrl = '//testlek.comers.se/pages/sessionprint.jsp';} else {sessionStorage.removeItem('searchUrl');}document.getElementById('comersIframeContainer').src = iframeUrl;iFrameResize({log: false}, '#comersIframeContainer');</script>
 
 </body>
 
