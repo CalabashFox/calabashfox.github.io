@@ -56,6 +56,7 @@
             if (isSafari() && sessionStorage.getItem('comersSessionCookie') === null) {
                 return;
             }
+		console.log('iiframe>???');
             var iframeUrl = sessionStorage.getItem('searchUrl');
             if (iframeUrl === null) {
                 iframeUrl = '//testlek.comers.se/pages/sessionprint.jsp';
