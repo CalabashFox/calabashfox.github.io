@@ -36,11 +36,6 @@
     <script src="//testlek.comers.se/pages/js/iframe/comers-iframe-integration.1.0.js?v=1.0" type="text/javascript"></script>
     <script type="text/javascript">
         (function() {
-            ComersIframeIntegration.create({
-                comersSiteBaseUrl: 'https://testlek.comers.se',
-                bookingPageUrl: 'testiframealv.comers.se',
-                debug: true
-            });
         })();
     </script>
     <script src="//testlek.comers.se/pages/js/iframeResizer/js/iframeResizer.min.js" type="text/javascript"></script>
@@ -53,10 +48,15 @@
 		}
         
         (function() {
-            if (isSafari() && sessionStorage.getItem('comersSessionCookie') === null) {
-                return;
-            }
-		console.log('iiframe>???');
+		var reload = 
+            ComersIframeIntegration.create({
+                comersSiteBaseUrl: 'https://testlek.comers.se',
+                bookingPageUrl: 'testiframealv.comers.se',
+                debug: true
+            });
+		if (reload) {
+		return;
+		}
             var iframeUrl = sessionStorage.getItem('searchUrl');
             if (iframeUrl === null) {
                 iframeUrl = '//testlek.comers.se/pages/sessionprint.jsp';
