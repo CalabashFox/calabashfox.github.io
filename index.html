@@ -61,7 +61,7 @@
     <script type="text/javascript">
         (function() {
             var div = document.createElement('div');
-            var comersSession sessionStorage.getItem('comersSessionCookie');
+            var comersSession = sessionStorage.getItem('comersSessionCookie');
             if (comersSession === null) {
                 div.innerHTML = 'null';
             } else {
