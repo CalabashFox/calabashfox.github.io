@@ -46,16 +46,29 @@
     <script src="//testlek.comers.se/pages/js/iframeResizer/js/iframeResizer.min.js" type="text/javascript"></script>
     <iframe id="comersIframeContainer" src="" scrolling="no" frameBorder="0"></iframe>
     <script type="text/javascript">
-        var iframeUrl = sessionStorage.getItem('searchUrl');
-        if (iframeUrl === null) {
-            iframeUrl = '//testlek.comers.se/pages/sessionprint.jsp';
-        } else {
-            sessionStorage.removeItem('searchUrl');
-        }
-        document.getElementById('comersIframeContainer').src = iframeUrl;
-        iFrameResize({
-            log: false
-        }, '#comersIframeContainer');
+		function isSafari() {
+			var ua = navigator.userAgent.toLowerCase();
+			return true;
+			//return ua.indexOf('safari') != -1 && ua.indexOf('chrome') <= -1;
+		}
+        
+        (function() {
+            if (isSafari() && sessionStorage.getItem('comersSessionCookie') === null) {
+                return;
+            }
+            var iframeUrl = sessionStorage.getItem('searchUrl');
+            if (iframeUrl === null) {
+                iframeUrl = '//testlek.comers.se/pages/sessionprint.jsp';
+            } else {
+                sessionStorage.removeItem('searchUrl');
+            }
+            document.getElementById('comersIframeContainer').src = iframeUrl;
+            iFrameResize({
+                log: false
+            }, '#comersIframeContainer');
+        })();
+        
+        
     </script>
 
     <script type="text/javascript">
