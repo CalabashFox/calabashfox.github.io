@@ -59,9 +59,16 @@
     </script>
 
     <script type="text/javascript">
-        var div = document.createElement('div');
-        div.innerHTML = sessionStorage.getItem('comersSessionCookie');
-        document.body.appendChild(div);
+        (function() {
+            var div = document.createElement('div');
+            var comersSession sessionStorage.getItem('comersSessionCookie');
+            if (comersSession === null) {
+                div.innerHTML = 'null';
+            } else {
+                div.innerHTML = comersSession;
+            }
+            document.body.appendChild(div);
+        })();
     </script>
     session cookie set:
 </body>
