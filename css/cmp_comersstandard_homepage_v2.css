@@ -1,0 +1,136 @@
+/* default styles */
+@import url('https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+#searchFormWrapper.searchFormWidget {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: 16px;
+}
+#searchFormWrapper.searchFormWidget .searchComponentLabel {
+  line-height: 0;
+}
+#searchFormWrapper.searchFormWidget .accommodationRow {
+  line-height: 0;
+}
+#searchFormWrapper.searchFormWidget .clickableLink {
+  text-decoration: none;
+}
+#searchFormWrapper.searchFormWidget .clickableLink i {
+  text-decoration: none;
+}
+#searchFormWrapper.searchFormWidget .clickableLink i:hover {
+  text-decoration: none;
+}
+#searchFormWrapper.searchFormWidget .clickableLink:hover {
+  text-decoration: none;
+}
+#searchFormWrapper.searchFormWidget .selectableItem {
+  line-height: 1;
+}
+#searchFormWrapper.searchFormWidget body,
+#searchFormWrapper.searchFormWidget div,
+#searchFormWrapper.searchFormWidget th,
+#searchFormWrapper.searchFormWidget td,
+#searchFormWrapper.searchFormWidget input,
+#searchFormWrapper.searchFormWidget a,
+#searchFormWrapper.searchFormWidget h1,
+#searchFormWrapper.searchFormWidget h2,
+#searchFormWrapper.searchFormWidget h3,
+#searchFormWrapper.searchFormWidget h4,
+#searchFormWrapper.searchFormWidget h5,
+#searchFormWrapper.searchFormWidget h6,
+#searchFormWrapper.searchFormWidget p,
+#searchFormWrapper.searchFormWidget blockquote,
+#searchFormWrapper.searchFormWidget form,
+#searchFormWrapper.searchFormWidget ul,
+#searchFormWrapper.searchFormWidget li,
+#searchFormWrapper.searchFormWidget ol,
+#searchFormWrapper.searchFormWidget dl,
+#searchFormWrapper.searchFormWidget fieldset,
+#searchFormWrapper.searchFormWidget address,
+#searchFormWrapper.searchFormWidget select,
+#searchFormWrapper.searchFormWidget button,
+#searchFormWrapper.searchFormWidget .overlibFontClass,
+#searchFormWrapper.searchFormWidget samp,
+#searchFormWrapper.searchFormWidget .ui-widget,
+#searchFormWrapper.searchFormWidget .ui-button-text,
+#searchFormWrapper.searchFormWidget .ui-widget input,
+#searchFormWrapper.searchFormWidget .ui-widget select,
+#searchFormWrapper.searchFormWidget .ui-widget textarea,
+#searchFormWrapper.searchFormWidget .ui-widget button {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
+#searchFormWrapper .searchComponentContainer {
+  box-sizing: border-box;
+  padding: 25px 30px;
+  border-radius: 4px;
+  background-color: rgba(34, 34, 34, 0.5);
+}
+#searchFormWrapper .searchComponentContainer .searchComponentRow {
+  border: 1px solid transparent;
+  background-color: transparent;
+}
+#searchFormWrapper .searchComponentContainer .searchComponentRow .searchComponent {
+  background-color: transparent;
+  margin-right: 10px;
+}
+#searchFormWrapper .searchComponentContainer .searchComponentRow .searchComponent.advancedSearchComponent {
+  max-width: 50px;
+}
+#searchFormWrapper .searchComponentContainer .searchComponentRow .searchComponent.advancedSearchComponent i {
+  display: block;
+}
+#searchFormWrapper .searchComponentContainer .searchComponentRow .searchComponent.advancedSearchComponent .searchComponentLabel#displayAdvancedSearch {
+  padding: 5px;
+  min-width: 0;
+}
+#searchFormWrapper .searchComponentContainer .searchComponentRow .searchComponent.advancedSearchComponent .searchFormLabel {
+  display: block;
+  color: #666665;
+  font-size: 12px;
+}
+#searchFormWrapper .searchComponentContainer .searchComponentRow .searchComponent.hasAdvancedSearch {
+  margin-right: -2px;
+}
+#searchFormWrapper .searchComponentContainer .searchComponentRow .searchComponent.hasAdvancedSearch .searchComponentLabel {
+  border-radius: 3px 0 0 3px;
+}
+#searchFormWrapper .searchComponentContainer .searchComponentRow .searchComponent.hasProductTypeSearch .searchComponentLabel {
+  border-radius: 0 3px 3px 0;
+}
+#searchFormWrapper .searchComponentContainer .searchComponentRow .searchComponent .searchComponentLabel {
+  box-sizing: border-box;
+  border-radius: 3px;
+  padding: 10px 5px;
+}
+#searchFormWrapper .searchComponentContainer .searchComponentRow .searchComponent .searchComponentLabel .labelContainer {
+  vertical-align: middle;
+  display: inline-block;
+}
+#searchFormWrapper .searchComponentContainer .searchComponentRow .searchComponent .searchComponentLabel .labelContainer .labelTitle {
+  display: block;
+  color: #666665;
+  font-size: 12px;
+}
+#searchFormWrapper .searchComponentContainer .searchComponentRow .searchComponent .searchComponentLabel .labelContainer .labelContent {
+  display: block;
+}
+#searchFormWrapper .searchComponentContainer .searchComponentRow .searchComponent.searchColumn {
+  background-color: transparent;
+  max-width: 150px;
+}
+#searchFormWrapper .searchComponentContainer .searchComponentRow .searchComponent.searchColumn .searchButton {
+  border-color: transparent;
+  box-sizing: border-box;
+  padding: 20px 5px;
+}
+#wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+#searchFormWrapper {
+  position: unset;
+}
+#standardHomePageContainer #standardHomePageBackground {
+  background-image: url("/pages/img/homepage.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
