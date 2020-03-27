@@ -1,4 +1,4 @@
-/*---------------------
+pu/*---------------------
 		This CSS is intended to be the general design style sheet for Comers.
 		The stylesheet is used by Comers both in administration common site and customer local sites.
 
@@ -3821,6 +3821,9 @@ div.puffRowContainer.columns_4 div.puffContainer.size_0 {
 }
 div.puffRowContainer {
   clear: both;
+}
+.puffcontainer {
+	background-color: #3da7f2;
 }
 div.puffContainer.size_0,
 div.puffContainer.size_1 {
