@@ -5000,6 +5000,9 @@ h6 {
 .material-icons.filterIcon:after {
   content: '\E152';
 }
+.material-icons.couponIcon:after {
+  content: '\E89A';
+}
 .material-icons.personIcon:after {
   content: '\E7FD';
 }
@@ -5919,61 +5922,122 @@ a.cs9HyperLink {
   color: #666665;
   font-weight: 600;
 }
-#mapSidebar #searchFormWrapper {
+#searchFormWrapper.verticalMode {
   /* common */
   /* date picker */
 }
-#mapSidebar #searchFormWrapper .searchComponentContainer {
-  margin: 0 auto;
+#searchFormWrapper.verticalMode .searchComponentContainer {
+  padding: 15px;
 }
-#mapSidebar #searchFormWrapper .searchComponentContainer .errorRow {
+#searchFormWrapper.verticalMode .searchComponentContainer .errorRow {
   display: block;
 }
-#mapSidebar #searchFormWrapper .searchComponentContainer .errorRow .errorText {
+#searchFormWrapper.verticalMode .searchComponentContainer .errorRow .errorText {
   font-weight: 500;
 }
-#mapSidebar #searchFormWrapper .searchComponentContainer .searchComponentRow .searchComponent {
+#searchFormWrapper.verticalMode .searchComponentContainer .searchComponentRow.searchRow {
+  flex-wrap: wrap;
+}
+#searchFormWrapper.verticalMode .searchComponentContainer .searchComponentRow.advancedSearchRow {
+  background-color: #fff;
+  border: 1px solid #A8A8A7;
+  border-radius: 5px;
+}
+#searchFormWrapper.verticalMode .searchComponentContainer .searchComponentRow .searchComponent {
+  width: 100%;
+  flex: 1 1 100%;
+  margin: 3px 0;
+}
+#searchFormWrapper.verticalMode .searchComponentContainer .searchComponentRow .searchComponent.productTypeColumn.hasAdvancedSearch .clusteredLabel .searchComponentLabel:first-child {
+  flex: 1 1 80%;
+}
+#searchFormWrapper.verticalMode .searchComponentContainer .searchComponentRow .searchComponent.productTypeColumn.hasAdvancedSearch .clusteredLabel .searchComponentLabel:last-child {
+  flex: 1 1 15%;
+  padding: 7px 0;
+}
+#searchFormWrapper.verticalMode .searchComponentContainer .searchComponentRow .searchComponent.productTypeColumn.hasCoupon {
+  flex: 1 1 70%;
+  margin-right: 5px;
+}
+#searchFormWrapper.verticalMode .searchComponentContainer .searchComponentRow .searchComponent.couponColumn {
+  flex: 1 1 20%;
+}
+#searchFormWrapper.verticalMode .searchComponentContainer .searchComponentRow .searchComponent.couponColumn .searchComponentLabel {
+  flex: 1 1 15%;
+  padding: 7px 0;
+}
+#searchFormWrapper.verticalMode .searchComponentContainer .searchComponentRow .searchComponent.searchColumn {
+  flex: 1 1 100%;
+  max-width: unset;
+}
+#searchFormWrapper.verticalMode .searchComponentContainer .searchComponentRow .searchComponent.searchColumn .searchButton {
+  padding: 10px;
   flex: 1 1 100%;
 }
-#mapSidebar #searchFormWrapper .searchComponentContainer .searchComponentRow .searchComponent .searchComponentLabel {
+#searchFormWrapper.verticalMode .searchComponentContainer .searchComponentRow .searchComponent .searchComponentLabel {
+  white-space: normal;
+  padding: 5px;
+  min-width: unset;
+}
+#searchFormWrapper.verticalMode .searchComponentContainer .searchComponentRow .searchComponent .searchComponentLabel span {
   white-space: normal;
 }
-#mapSidebar #searchFormWrapper .searchComponentContainer .searchComponentRow .searchComponent.alternativeSearchColumn {
+#searchFormWrapper.verticalMode .searchComponentContainer .searchComponentRow .searchComponent.alternativeSearchColumn {
   display: block;
 }
-#mapSidebar #searchFormWrapper .searchComponentContainer .searchOptionsContainer {
-  width: calc(100% - 2px);
+#searchFormWrapper.verticalMode .searchComponentContainer .searchOptionsContainer {
+  width: 100%;
   max-width: unset;
   position: relative;
   min-width: unset;
 }
-#mapSidebar #searchFormWrapper .searchComponentContainer .searchOptionsContainer .searchOptionsContent {
+#searchFormWrapper.verticalMode .searchComponentContainer .searchOptionsContainer .searchOptionsContent {
   padding: 5px 15px;
 }
-#mapSidebar #searchFormWrapper .searchComponentContainer .alternativeRow {
+#searchFormWrapper.verticalMode .searchComponentContainer .alternativeRow {
   flex-wrap: wrap;
+  background-color: #fff;
 }
-#mapSidebar #searchFormWrapper .searchComponentContainer .alternativeRow .campingLotSize {
+#searchFormWrapper.verticalMode .searchComponentContainer .alternativeRow .alternativeColumn {
+  flex: 1 1 10%;
+  min-width: 150px;
+  max-width: unset;
+}
+#searchFormWrapper.verticalMode .searchComponentContainer .alternativeRow .alternativeColumn.couponColumn,
+#searchFormWrapper.verticalMode .searchComponentContainer .alternativeRow .alternativeColumn.campingLotSize {
+  min-width: unset;
+  max-width: unset;
+}
+#searchFormWrapper.verticalMode .searchComponentContainer .alternativeRow .campingLotSize {
   flex: 1 1 100%;
 }
-#mapSidebar #searchFormWrapper .searchComponentContainer .alternativeRow.couponRow .couponField {
+#searchFormWrapper.verticalMode .searchComponentContainer .alternativeRow.couponRow .couponField {
+  text-align: left;
   flex-wrap: wrap;
 }
-#mapSidebar #searchFormWrapper .searchComponentContainer .alternativeRow.couponRow .couponField .cs9FloatContainer {
-  flex: 0 1 50%;
-}
-#mapSidebar #searchFormWrapper .searchComponentContainer .alternativeRow.couponRow .couponField .activateCouponButton {
+#searchFormWrapper.verticalMode .searchComponentContainer .alternativeRow.couponRow .couponField .cs9FloatContainer {
   flex: 0 1 47%;
 }
-#mapSidebar #searchFormWrapper .searchResultContainer {
+#searchFormWrapper.verticalMode .searchComponentContainer .alternativeRow.couponRow .couponField .activateCouponButton {
+  flex: 0 1 47%;
+}
+#searchFormWrapper.verticalMode #bookingCalendar .searchComponentLabel:first-child {
+  flex: 1 1 50%;
+  min-width: unset;
+}
+#searchFormWrapper.verticalMode #bookingCalendar .searchComponentLabel:last-child {
+  flex: 1 1 50%;
+  min-width: unset;
+}
+#searchFormWrapper.verticalMode .searchResultContainer {
   position: absolute;
 }
-#mapSidebar #searchFormWrapper .searchOptionsContainer.daterangepicker.ltr.auto-apply {
+#searchFormWrapper.verticalMode .searchOptionsContainer.daterangepicker.ltr.auto-apply {
   position: relative;
   width: 100%;
   min-width: unset;
 }
-#mapSidebar #searchFormWrapper .searchOptionsContainer.daterangepicker.ltr.auto-apply .datePickerContainer {
+#searchFormWrapper.verticalMode .searchOptionsContainer.daterangepicker.ltr.auto-apply .datePickerContainer {
   padding: 5px 15px;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -5982,15 +6046,17 @@ a.cs9HyperLink {
   -ms-user-select: none;
   user-select: none;
 }
-#mapSidebar #searchFormWrapper .searchOptionsContainer.daterangepicker.ltr.auto-apply .drp-calendar.left,
-#mapSidebar #searchFormWrapper .searchOptionsContainer.daterangepicker.ltr.auto-apply .drp-calendar.right {
+#searchFormWrapper.verticalMode .searchOptionsContainer.daterangepicker.ltr.auto-apply .drp-calendar.left,
+#searchFormWrapper.verticalMode .searchOptionsContainer.daterangepicker.ltr.auto-apply .drp-calendar.right {
   margin: 0 auto;
 }
-#mapSidebar #searchFormWrapper .destination .destinationText {
+#searchFormWrapper.verticalMode .destination .destinationText {
   width: 130px;
 }
 #searchFormWrapper {
   position: relative;
+  max-width: 1080px;
+  margin: 0 auto;
 }
 #searchFormWrapper .searchFormError {
   padding-left: 3px;
@@ -6005,6 +6071,13 @@ a.cs9HyperLink {
 }
 #searchFormWrapper .searchComponentContainer {
   margin: 20px auto 5px auto;
+  border-radius: 5px;
+  padding: 15px 25px;
+  background-color: #F2F2F2;
+  box-sizing: border-box;
+  /*.responsiveM({
+	  padding: 15px;
+	});*/
 }
 #searchFormWrapper .searchComponentContainer .searchComponentRow {
   width: 100%;
@@ -6013,9 +6086,15 @@ a.cs9HyperLink {
   box-sizing: border-box;
   align-items: flex-end;
 }
-#searchFormWrapper .searchComponentContainer .searchComponentRow.advancedSearchRow {
-  background-color: #fff;
+#searchFormWrapper .searchComponentContainer .searchComponentRow.searchRow {
+  background-color: #F2F2F2;
   border: none;
+  flex-wrap: nowrap;
+  /*.responsiveM({
+		  flex-wrap: wrap;
+		});*/
+}
+#searchFormWrapper .searchComponentContainer .searchComponentRow.advancedSearchRow {
   margin: 6px 0;
 }
 #searchFormWrapper .searchComponentContainer .searchComponentRow.errorRow {
@@ -6033,30 +6112,112 @@ a.cs9HyperLink {
 }
 #searchFormWrapper .searchComponentContainer .searchComponentRow .searchComponent {
   flex: 1 1;
-  flex-grow: 2;
+  flex-grow: 1;
   position: relative;
   padding: 2px;
   align-self: center;
+  background-color: #F2F2F2;
+  margin: 0 3px;
+  /*.responsiveM({
+		  width: 100%;
+		  flex: 1 1 100%;
+		  margin: 3px 0;
+		});*/
 }
-@media (max-width: 768px) {
-  #searchFormWrapper .searchComponentContainer .searchComponentRow .searchComponent {
-    width: 100%;
-    flex: 1 1 100%;
-  }
+#searchFormWrapper .searchComponentContainer .searchComponentRow .searchComponent:first-of-type {
+  margin-left: 0;
+}
+#searchFormWrapper .searchComponentContainer .searchComponentRow .searchComponent:last-of-type {
+  margin-right: 0;
+}
+#searchFormWrapper .searchComponentContainer .searchComponentRow .searchComponent.productTypeColumn.hasAdvancedSearch .clusteredLabel {
+  display: flex;
+}
+#searchFormWrapper .searchComponentContainer .searchComponentRow .searchComponent.productTypeColumn.hasAdvancedSearch .clusteredLabel .searchComponentLabel:first-child {
+  border-radius: 5px 0 0 5px;
+  padding-right: 10px;
+  /*.responsiveM({
+				  flex: 1 1 80%;
+				})*/
+}
+#searchFormWrapper .searchComponentContainer .searchComponentRow .searchComponent.productTypeColumn.hasAdvancedSearch .clusteredLabel .searchComponentLabel:last-child {
+  min-width: 60px;
+  padding: 10px 5px;
+  /*
+  .responsiveM({
+	flex: 1 1 15%;
+	padding: 7px 0;
+  });*/
+  border-radius: 0 5px 5px 0;
+  margin-left: -1px;
+}
+#searchFormWrapper .searchComponentContainer .searchComponentRow .searchComponent.productTypeColumn.hasAdvancedSearch .clusteredLabel .searchComponentLabel:last-child i {
+  display: block;
+  margin: 0 auto;
+  line-height: 20px;
+}
+#searchFormWrapper .searchComponentContainer .searchComponentRow .searchComponent.productTypeColumn.hasAdvancedSearch .clusteredLabel .searchComponentLabel:last-child .searchFormLabel {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  color: #666665;
+  line-height: 12px;
+}
+#searchFormWrapper .searchComponentContainer .searchComponentRow .searchComponent.productTypeColumn.hasCoupon {
+  /*.responsiveM({
+			  flex: 1 1 70%;
+			  margin-right: 5px;
+			});*/
+}
+#searchFormWrapper .searchComponentContainer .searchComponentRow .searchComponent.couponColumn {
+  flex-grow: 0;
+  /*
+		  .responsiveM({
+			flex: 1 1 20%;
+		  });*/
+}
+#searchFormWrapper .searchComponentContainer .searchComponentRow .searchComponent.couponColumn .searchComponentLabel {
+  min-width: 60px;
+  padding: 10px 5px;
+  /*
+  .responsiveM({
+	flex: 1 1 15%;
+	padding: 7px 0;
+  });*/
+  padding: 12px 5px;
+}
+#searchFormWrapper .searchComponentContainer .searchComponentRow .searchComponent.couponColumn .searchComponentLabel i {
+  display: block;
+  margin: 0 auto;
+  line-height: 20px;
+}
+#searchFormWrapper .searchComponentContainer .searchComponentRow .searchComponent.couponColumn .searchComponentLabel .searchFormLabel {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  color: #666665;
+  line-height: 12px;
+}
+#searchFormWrapper .searchComponentContainer .searchComponentRow .searchComponent.mobileOptionsColumn {
+  border-radius: 5px;
 }
 #searchFormWrapper .searchComponentContainer .searchComponentRow .searchComponent .calendarDateSeparator {
   color: #666665;
 }
 #searchFormWrapper .searchComponentContainer .searchComponentRow .searchComponent .searchComponentLabel {
-  min-width: 180px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border-color: #A8A8A7;
+  padding: 10px 5px;
+  /*.responsiveM({
+			padding: 5px;
+			min-width: unset;
+		  });*/
 }
-@media (max-width: 768px) {
-  #searchFormWrapper .searchComponentContainer .searchComponentRow .searchComponent .searchComponentLabel span {
-    white-space: normal;
-  }
-}
-#searchFormWrapper .searchComponentContainer .searchComponentRow .searchComponent .searchComponentLabel#displayAdvancedSearch {
-  min-width: 150px;
+#searchFormWrapper .searchComponentContainer .searchComponentRow .searchComponent .searchComponentLabel span {
+  /*.responsiveM({
+			  white-space: normal;
+			});*/
 }
 #searchFormWrapper .searchComponentContainer .searchComponentRow .searchComponent .searchComponentLabel i {
   vertical-align: middle;
@@ -6069,19 +6230,34 @@ a.cs9HyperLink {
 #searchFormWrapper .searchComponentContainer .searchComponentRow .searchComponent .searchComponentLabel:hover {
   cursor: pointer;
   border-color: #006179;
-  /*background-color: @color-comers-blue-4;*/
+}
+#searchFormWrapper .searchComponentContainer .searchComponentRow .searchComponent .searchComponentLabel .labelContainer {
+  vertical-align: middle;
+  display: inline-block;
+}
+#searchFormWrapper .searchComponentContainer .searchComponentRow .searchComponent .searchComponentLabel .labelContainer .labelTitle {
+  display: block;
+  color: #666665;
+  font-size: 12px;
+  line-height: 12px;
+}
+#searchFormWrapper .searchComponentContainer .searchComponentRow .searchComponent .searchComponentLabel .labelContainer .labelContent {
+  display: block;
+}
+#searchFormWrapper .searchComponentContainer .searchComponentRow .searchComponent .searchComponentLabel .labelContainer .labelContent.shortLabelContent {
+  padding: 6px 0;
 }
 #searchFormWrapper .searchComponentContainer .searchComponentRow .searchComponent.searchAccommodation .searchComponentLabel {
   min-width: 220px;
 }
 #searchFormWrapper .searchComponentContainer .searchComponentRow .searchComponent.searchColumn {
-  min-width: 100px;
-  background-color: #D0D0D0;
-}
-@media (max-width: 768px) {
-  #searchFormWrapper .searchComponentContainer .searchComponentRow .searchComponent.searchColumn {
-    max-width: unset;
-  }
+  flex: 1 1 0;
+  background-color: transparent;
+  padding: 0;
+  max-width: 200px;
+  /*.responsiveM({
+			flex: 1 1 100%;
+		  });*/
 }
 #searchFormWrapper .searchComponentContainer .searchComponentRow .searchComponent.searchColumn .searchButton {
   width: 100%;
@@ -6105,7 +6281,13 @@ a.cs9HyperLink {
   background-color: #006179;
   border: 1px solid #006179;
   color: #FFFFFF;
-  border-color: #D0D0D0;
+  border-color: #F2F2F2;
+  border-radius: 5px;
+  padding: 21px 10px;
+  /*.responsiveM({
+			  padding: 10px;
+			  flex: 1 1 100%;
+			});*/
 }
 #searchFormWrapper .searchComponentContainer .searchComponentRow .searchComponent.searchColumn .searchButton:hover {
   -webkit-filter: brightness(110%);
@@ -6332,12 +6514,9 @@ a.cs9HyperLink {
   flex-wrap: wrap;
   width: 100%;
   margin: 3px 0;
-  background-color: #fff;
-}
-@media (max-width: 768px) {
-  #searchFormWrapper .searchComponentContainer .alternativeRow {
-    flex-wrap: wrap;
-  }
+  /*.responsiveM({
+		flex-wrap: wrap;
+	  });*/
 }
 #searchFormWrapper .searchComponentContainer .alternativeRow.titleRow {
   margin: 0;
@@ -6360,33 +6539,37 @@ a.cs9HyperLink {
   padding-top: 1.2em;
 }
 #searchFormWrapper .searchComponentContainer .alternativeRow .alternativeColumn {
-  text-align: center;
   margin: 3px 0;
   min-width: 220px;
   max-width: 220px;
+  /*.responsiveM({
+		  flex: 1 1 10%;
+		  min-width: 150px;
+		  max-width: unset;
+		});*/
 }
-@media (max-width: 768px) {
-  #searchFormWrapper .searchComponentContainer .alternativeRow .alternativeColumn {
-    flex: 1 1 10%;
-    min-width: 150px;
-    max-width: unset;
-  }
+#searchFormWrapper .searchComponentContainer .alternativeRow .alternativeColumn.couponColumn {
+  flex: 1 1 100%;
+  min-width: unset;
+  max-width: unset;
+}
+#searchFormWrapper .searchComponentContainer .alternativeRow .alternativeColumn.campingLotSize {
+  min-width: 300px;
+  max-width: 300px;
 }
 #searchFormWrapper .searchComponentContainer .alternativeRow .alternativeColumn.campingLotSize {
   flex: 0 1 250px;
-}
-@media (max-width: 768px) {
-  #searchFormWrapper .searchComponentContainer .alternativeRow .alternativeColumn.campingLotSize {
-    flex: 1 1 100%;
-  }
+  /*.responsiveM({
+			flex: 1 1 100%;
+		  });*/
 }
 #searchFormWrapper .searchComponentContainer .alternativeRow .alternativeColumn .cs9ButtonColumn {
   margin-left: 5px;
 }
-@media (max-width: 768px) {
-  #searchFormWrapper .searchComponentContainer .alternativeRow .alternativeColumn .couponColumn {
-    flex: 1 1 100%;
-  }
+#searchFormWrapper .searchComponentContainer .alternativeRow .alternativeColumn .couponColumn {
+  /*.responsiveM({
+			flex: 1 1 100%;
+		  });*/
 }
 #searchFormWrapper .searchComponentContainer .alternativeRow .alternativeColumn .alternative {
   border: 1px solid #006179;
@@ -6397,6 +6580,7 @@ a.cs9HyperLink {
   cursor: pointer;
   padding: 5px 10px;
   margin: 0 5px;
+  text-align: center;
 }
 #searchFormWrapper .searchComponentContainer .alternativeRow .alternativeColumn .alternative.selectedAlternative {
   border-color: #658A9C;
@@ -6414,6 +6598,27 @@ a.cs9HyperLink {
   width: calc(90%);
   display: inline-block;
   white-space: nowrap;
+}
+#searchFormWrapper #bookingCalendar {
+  display: flex;
+}
+#searchFormWrapper #bookingCalendar .searchComponentLabel:first-child {
+  min-width: 120px;
+  border-radius: 5px 0 0 5px;
+  padding-right: 10px;
+  /*.responsiveM({
+		flex: 1 1 50%;
+		min-width: unset;
+	  })*/
+}
+#searchFormWrapper #bookingCalendar .searchComponentLabel:last-child {
+  min-width: 120px;
+  border-radius: 0 5px 5px 0;
+  margin-left: -1px;
+  /*.responsiveM({
+		flex: 1 1 50%;
+		min-width: unset;
+	  })*/
 }
 /*
 #searchFormWrapper {
@@ -15269,6 +15474,9 @@ a.cs9HyperLink {
   font-size: 1rem;
   vertical-align: middle;
 }
+#searchFormWrapper.verticalMode .couponComponent a {
+  display: block;
+}
 .couponComponent {
   display: flex;
   flex-wrap: wrap;
@@ -16126,6 +16334,30 @@ a.cs9HyperLink {
   letter-spacing: 0.05em;
   font-weight: 500;
 }
+#searchFormWrapper.verticalMode .searchComponentContainer.alternativeComponentContainer .searchComponentRow {
+  border: 1px solid #A8A8A7;
+}
+#searchFormWrapper.verticalMode .searchComponentContainer .searchComponentRow {
+  flex-wrap: wrap;
+}
+#searchFormWrapper.verticalMode .searchComponentContainer .searchComponentRow.advancedSearchRow {
+  border: none;
+}
+#searchFormWrapper.verticalMode .searchComponentContainer .searchComponentRow .searchComponent {
+  flex: 1 1 100%;
+}
+#searchFormWrapper.verticalMode .searchComponentContainer .searchComponentRow .searchComponent .searchOptionsContainer {
+  width: 100%;
+  max-width: unset;
+  position: relative;
+  min-width: unset;
+  box-sizing: border-box;
+}
+#searchFormWrapper.verticalMode .searchComponentContainer .searchComponentRow .searchComponent .searchOptionsContainer .searchOptionsContent {
+  padding: 5px 15px;
+  width: 100%;
+  box-sizing: border-box;
+}
 .searchComponentContainer {
   max-width: 100%;
   margin: 0 auto;
@@ -16135,20 +16367,12 @@ a.cs9HyperLink {
   border: none;
 }
 .searchComponentContainer .searchComponentRow {
-  border: 1px solid #D0D0D0;
-  background-color: #D0D0D0;
-  border-radius: 2px;
   justify-content: center;
   flex-wrap: nowrap;
   width: 100%;
   align-items: flex-end;
   display: flex;
   box-sizing: border-box;
-}
-@media (max-width: 768px) {
-  .searchComponentContainer .searchComponentRow {
-    flex-wrap: wrap;
-  }
 }
 .searchComponentContainer .searchComponentRow.searchComponentLoading {
   display: none;
@@ -16169,11 +16393,6 @@ a.cs9HyperLink {
   box-sizing: border-box;
   background-color: #D0D0D0;
   flex: 1 1;
-}
-@media (max-width: 768px) {
-  .searchComponentContainer .searchComponentRow .searchComponent {
-    flex: 1 1 100%;
-  }
 }
 .searchComponentContainer .searchComponentRow .searchComponent.searchComponentLoading {
   display: none;
@@ -16200,7 +16419,7 @@ a.cs9HyperLink {
   display: inline-block;
 }
 .searchComponentContainer .searchComponentRow .searchComponent .searchComponentLabel.searchComponentLabelError {
-  border: 1px solid #A20A2F;
+  border-color: #A20A2F !important;
   color: #A20A2F;
 }
 .searchComponentContainer .searchComponentRow .searchComponent .searchComponentLabel.searchComponentLabelError i.material-icons:after {
@@ -16224,29 +16443,17 @@ a.cs9HyperLink {
 .searchComponentContainer .searchComponentRow .searchComponent .searchOptionsContainer {
   border: 1px solid #006179;
   border-radius: 2px;
+  border-radius: 5px;
   margin-top: 3px;
   position: absolute;
   z-index: 100;
   background: #fff;
   width: 100%;
 }
-@media (max-width: 768px) {
-  .searchComponentContainer .searchComponentRow .searchComponent .searchOptionsContainer {
-    width: calc(100% - 2px);
-    max-width: unset;
-    position: relative;
-    min-width: unset;
-  }
-}
 .searchComponentContainer .searchComponentRow .searchComponent .searchOptionsContainer .searchOptionsContent {
   margin: 0 auto;
   height: 100%;
   padding: 5px;
-}
-@media (max-width: 768px) {
-  .searchComponentContainer .searchComponentRow .searchComponent .searchOptionsContainer .searchOptionsContent {
-    padding: 5px 15px;
-  }
 }
 .searchComponentContainer .searchComponentRow .searchComponent .searchButton {
   display: inline-block;
@@ -16389,6 +16596,415 @@ a.cs9HyperLink {
 .productInfoModal .productInfoWrapper .productInfoImageWrapper {
   margin: 0;
   display: block;
+}
+.cardListContainer {
+  margin: 20px 0;
+}
+.cardListContainer .cardListTitle {
+  padding: 3px 0;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+.cardListContainer .cardListDescription {
+  padding-bottom: 5px;
+}
+.cardRowContainer {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 800px) {
+  .cardRowContainer {
+    display: block;
+  }
+}
+.cardRowContainer.columns_2 .cardRowContainerItem {
+  min-height: 100%;
+}
+.cardRowContainer.columns_2 .cardRowContainerItem.size_0 {
+  width: calc(50% - 0.75em);
+}
+@media only screen and (max-width: 800px) {
+  .cardRowContainer.columns_2 .cardRowContainerItem.size_0 {
+    width: 100%;
+    margin-top: 1.5em;
+  }
+}
+.cardRowContainer.columns_3 .cardRowContainerItem {
+  min-height: 100%;
+}
+.cardRowContainer.columns_3 .cardRowContainerItem.size_0 {
+  width: calc(33.3333% - 0.75em);
+}
+@media only screen and (max-width: 800px) {
+  .cardRowContainer.columns_3 .cardRowContainerItem.size_0 {
+    width: 100%;
+    margin-top: 1.5em;
+  }
+}
+.cardRowContainer.columns_3 .cardRowContainerItem.size_1 {
+  width: calc(50% - 0.75em);
+}
+@media only screen and (max-width: 800px) {
+  .cardRowContainer.columns_3 .cardRowContainerItem.size_1 {
+    width: 100%;
+    margin-top: 1.5em;
+  }
+}
+.cardRowContainer.columns_4 .cardRowContainerItem {
+  min-height: 100%;
+}
+.cardRowContainer.columns_4 .cardRowContainerItem.size_0 {
+  width: calc(25% - 0.75em);
+}
+@media only screen and (max-width: 800px) {
+  .cardRowContainer.columns_4 .cardRowContainerItem.size_0 {
+    width: 100%;
+    margin-top: 1.5em;
+  }
+}
+.cardRowContainer.columns_4 .cardRowContainerItem.size_1 {
+  width: calc(50% - 0.75em);
+}
+@media only screen and (max-width: 800px) {
+  .cardRowContainer.columns_4 .cardRowContainerItem.size_1 {
+    width: 100%;
+    margin-top: 1.5em;
+  }
+}
+.carouselInnerContainer .jssorCaption {
+  color: #fff;
+}
+.carouselInnerContainer .jssorCaption h1 {
+  color: #fff;
+}
+.promoCard {
+  height: 100%;
+  display: flex;
+  max-width: 600px;
+  position: relative;
+  text-decoration: none;
+  flex-direction: column;
+}
+.promoCard .promoCardWrapper {
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+  border-radius: 5px;
+  flex-direction: column;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  transition: 0.3s ease box-shadow;
+}
+.promoCard .promoCardWrapper:hover {
+  text-decoration: none;
+  box-shadow: 0 0.25em 1em rgba(0, 0, 0, 0.2);
+}
+.promoCard .promoCardWrapper .promoCardHeader {
+  overflow: hidden;
+  position: relative;
+  border-radius: 5px 5px 0 0;
+}
+.promoCard .promoCardWrapper .promoCardHeader .promoCardLabel {
+  top: 1em;
+  left: 1em;
+  z-index: 2;
+  color: #fff;
+  font-weight: 500;
+  position: absolute;
+  background: #006179;
+  padding: 0.25em 0.75em;
+  border-radius: 5px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}
+.promoCard .promoCardWrapper .promoCardHeader .promoCardImage {
+  width: 100%;
+  display: block;
+}
+.promoCard .promoCardWrapper .promoCardHeader .promoCardOverlay {
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  position: absolute;
+}
+.promoCard .promoCardWrapper .promoCardHeader .promoCardPrice {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 1em;
+  z-index: 2;
+  color: #fff;
+  display: flex;
+  position: absolute;
+  align-items: baseline;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.6);
+}
+.promoCard .promoCardWrapper .promoCardHeader .promoCardPrice:after {
+  content: '';
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
+  height: 120px;
+  position: absolute;
+  pointer-events: none;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
+}
+.promoCard .promoCardWrapper .promoCardHeader .promoCardPrice .promoCardPricePrefix {
+  z-index: 2;
+  position: relative;
+  color: inherit;
+  margin-right: 0.25em;
+}
+.promoCard .promoCardWrapper .promoCardHeader .promoCardPrice .promoCardPriceValue {
+  z-index: 2;
+  position: relative;
+  color: inherit;
+  font-size: 1.25em;
+  font-weight: 600;
+}
+.promoCard .promoCardWrapper .promoCardHeader .promoCardPrice .promoCardPriceSuffix {
+  z-index: 2;
+  position: relative;
+  color: inherit;
+  margin-left: 0.25em;
+}
+.promoCard .promoCardWrapper .promoCardContent {
+  flex: 1;
+  padding: 1em;
+  border: transparent 0 solid;
+  border-width: 0 1px 1px 1px;
+  border-color: #ccc;
+  border-radius: 0 0 5px 5px;
+}
+.promoCard .promoCardWrapper .promoCardContent .promoCardTitle {
+  font-size: 18px;
+  font-weight: 600;
+  color: #006179;
+}
+@media only screen and (min-width: 800px) {
+  .promoCard .promoCardWrapper .promoCardContent .promoCardTitle {
+    font-size: 20px;
+  }
+}
+.promoCard .promoCardWrapper .promoCardContent .promoCardDescription {
+  margin-top: 0.25em;
+}
+.promoCard .promoCardWrapper .promoCardContent .promoCardLinkText {
+  margin-top: 1.5em;
+  color: #006179;
+  font-weight: 500;
+  text-decoration: underline;
+}
+.featCard .featCardWrapper {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  text-decoration: none;
+  flex-direction: column;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  border: transparent 1px solid;
+  border-color: #ccc;
+}
+.featCard .featCardWrapper:hover {
+  text-decoration: none;
+  box-shadow: 0 0.25em 1em rgba(0, 0, 0, 0.2);
+}
+@media only screen and (min-width: 800px) {
+  .featCard .featCardWrapper {
+    flex-direction: row;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .featCard .featCardWrapper.featCardWrapperImageRight {
+    flex-direction: row-reverse;
+  }
+}
+.featCard .featCardWrapper .featCardColumnLeft {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.featCard .featCardWrapper .featCardColumnLeft .featCardMedia {
+  width: 100%;
+  position: relative;
+}
+@media only screen and (min-width: 800px) {
+  .featCard .featCardWrapper .featCardColumnLeft .featCardMedia {
+    flex: 1;
+  }
+}
+.featCard .featCardWrapper .featCardColumnLeft .featCardMedia .featCardLabel {
+  top: 1em;
+  left: 1em;
+  z-index: 2;
+  color: #fff;
+  font-weight: 500;
+  position: absolute;
+  background: #006179;
+  padding: 0.25em 0.75em;
+  border-radius: 5px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}
+.featCard .featCardWrapper .featCardColumnLeft .featCardMedia .featCardImage {
+  width: 100%;
+  display: block;
+}
+.featCard .featCardWrapper .featCardColumnLeft .featCardMedia .featCardOverlay {
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  position: absolute;
+}
+.featCard .featCardWrapper .featCardColumnLeft .featCardMedia .featCardPrice {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 1em;
+  z-index: 2;
+  color: #fff;
+  display: flex;
+  position: absolute;
+  align-items: baseline;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.6);
+}
+.featCard .featCardWrapper .featCardColumnLeft .featCardMedia .featCardPrice:after {
+  content: '';
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
+  height: 120px;
+  position: absolute;
+  pointer-events: none;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
+}
+.featCard .featCardWrapper .featCardColumnLeft .featCardMedia .featCardPrice .featCardPricePrefix {
+  z-index: 2;
+  position: relative;
+  color: inherit;
+  margin-right: 0.25em;
+}
+.featCard .featCardWrapper .featCardColumnLeft .featCardMedia .featCardPrice .featCardPriceValue {
+  z-index: 2;
+  position: relative;
+  color: inherit;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+.featCard .featCardWrapper .featCardColumnLeft .featCardMedia .featCardPrice .featCardPriceSuffix {
+  z-index: 2;
+  position: relative;
+  color: inherit;
+  margin-left: 0.25em;
+}
+.featCard .featCardWrapper .featCardColumnRight {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.featCard .featCardWrapper .featCardColumnRight .featCardContent {
+  padding: 1em;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.featCard .featCardWrapper .featCardColumnRight .featCardContent .featCardTitle {
+  font-size: 24px;
+  font-weight: 600;
+  color: #006179;
+}
+@media only screen and (min-width: 800px) {
+  .featCard .featCardWrapper .featCardColumnRight .featCardContent .featCardTitle {
+    font-size: 32px;
+  }
+}
+.featCard .featCardWrapper .featCardColumnRight .featCardContent .featCardDescription {
+  margin-top: 0.25em;
+  line-height: 1.5;
+}
+@media only screen and (min-width: 800px) {
+  .featCard .featCardWrapper .featCardColumnRight .featCardContent .featCardDescription {
+    font-size: 18px;
+  }
+}
+.featCard .featCardWrapper .featCardColumnRight .featCardContent .featCardLinkText {
+  margin-top: 15px;
+  color: #006179;
+  font-weight: 500;
+  text-decoration: underline;
+}
+@media only screen and (min-width: 800px) {
+  .featCard .featCardWrapper .featCardColumnRight .featCardContent .featCardLinkText {
+    font-size: 18px;
+  }
+}
+.thumbCard {
+  height: 100%;
+}
+.thumbCard .thumbCardWrapper {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  text-decoration: none;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  transition: 0.3s ease box-shadow;
+}
+.thumbCard .thumbCardWrapper:hover {
+  text-decoration: none;
+  box-shadow: 0 0.25em 1em rgba(0, 0, 0, 0.2);
+}
+.thumbCard .thumbCardWrapper .thumbCardMedia {
+  width: 100%;
+  position: relative;
+}
+.thumbCard .thumbCardWrapper .thumbCardMedia .thumbCardLabel {
+  top: 0.5em;
+  left: 0.5em;
+  z-index: 2;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  position: absolute;
+  background: #006179;
+  padding: 0.25em 0.75em;
+  border-radius: 5px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}
+.thumbCard .thumbCardWrapper .thumbCardMedia .thumbCardImage {
+  width: 100%;
+  display: block;
+}
+.thumbCard .thumbCardWrapper .thumbCardContent {
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.thumbCard .thumbCardWrapper .thumbCardContent .thumbCardTitle {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.6), 0 0 4px rgba(0, 0, 0, 0.4);
+}
+.thumbCard .thumbCardWrapper .thumbCardContent .thumbCardDescription {
+  color: #fff;
+  margin-top: 0.25em;
+  line-height: 1.5;
+  font-size: 14px;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.6), 0 0 4px rgba(0, 0, 0, 0.4);
 }
 /*  Larger Screen Styling */
 .daterangepickerinline {
@@ -16862,108 +17478,87 @@ a.cs9HyperLink {
     transform-origin: center bottom;
   }
 }
-#standardHeader #standardHeaderFullPageOverlay {
-  display: block;
-  visibility: hidden;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  z-index: 2;
-  background-color: rgba(0, 0, 0, 0.5);
-  opacity: 0;
-  transition: visibility 0.5s, opacity 0.5s ease;
-}
-#standardHeader #standardHeaderFullPageOverlay.showFullPageOverlay {
-  visibility: visible;
-  opacity: 1;
-}
-#standardHeader #standardHeaderFullPageOverlay.disableTransitionOnLoad {
-  transition-duration: 0s !important;
-}
-#standardHeader #standardHeaderWrapper #standardHeaderTop {
+.standardHeader .standardHeaderWrapper .standardHeaderTop {
   display: flex;
 }
 @media (max-width: 768px) {
-  #standardHeader #standardHeaderWrapper #standardHeaderTop {
+  .standardHeader .standardHeaderWrapper .standardHeaderTop {
     flex-wrap: wrap;
     justify-content: center;
-    background-color: #A8A8A7;
     padding: 5px 0;
   }
 }
-#standardHeader #standardHeaderWrapper #standardHeaderTop #standardHeaderLogo {
+.standardHeader .standardHeaderWrapper .standardHeaderTop .standardHeaderLogo {
   display: inline-block;
-  padding: 10px;
+  padding: 5px 10px 0 10px;
   box-sizing: border-box;
 }
 @media (max-width: 768px) {
-  #standardHeader #standardHeaderWrapper #standardHeaderTop #standardHeaderLogo {
+  .standardHeader .standardHeaderWrapper .standardHeaderTop .standardHeaderLogo {
     display: none;
   }
 }
-#standardHeader #standardHeaderWrapper #standardHeaderTop #standardHeaderLogo a img {
+.standardHeader .standardHeaderWrapper .standardHeaderTop .standardHeaderLogo a img {
   max-width: 300px;
   max-height: 70px;
   width: auto;
   height: auto;
 }
 @media (max-width: 768px) {
-  #standardHeader #standardHeaderWrapper #standardHeaderTop #standardHeaderLogo a img {
+  .standardHeader .standardHeaderWrapper .standardHeaderTop .standardHeaderLogo a img {
     max-width: 100%;
   }
 }
-#standardHeader #standardHeaderWrapper #standardHeaderTop #standardHeaderTopRight {
+.standardHeader .standardHeaderWrapper .standardHeaderTop .standardHeaderTopRight {
   display: flex;
   justify-content: center;
   flex-direction: column;
   margin: 0 0 0 auto;
 }
 @media (max-width: 768px) {
-  #standardHeader #standardHeaderWrapper #standardHeaderTop #standardHeaderTopRight {
+  .standardHeader .standardHeaderWrapper .standardHeaderTop .standardHeaderTopRight {
     flex: 1 1 100%;
     flex-direction: row;
     align-items: center;
   }
 }
-#standardHeader #standardHeaderWrapper #standardHeaderTop #standardHeaderTopRight #standardHeaderMobileOpen {
+.standardHeader .standardHeaderWrapper .standardHeaderTop .standardHeaderTopRight .standardHeaderMobileOpen {
   display: none;
   margin: 0 10px;
   font-size: 21px;
 }
 @media (max-width: 768px) {
-  #standardHeader #standardHeaderWrapper #standardHeaderTop #standardHeaderTopRight #standardHeaderMobileOpen {
+  .standardHeader .standardHeaderWrapper .standardHeaderTop .standardHeaderTopRight .standardHeaderMobileOpen {
     display: inline-block;
     order: 1;
   }
 }
-#standardHeader #standardHeaderWrapper #standardHeaderTop #standardHeaderTopRight #standardHeaderMobileOpen:hover {
+.standardHeader .standardHeaderWrapper .standardHeaderTop .standardHeaderTopRight .standardHeaderMobileOpen:hover {
   color: #ED8335;
   cursor: pointer;
 }
-#standardHeader #standardHeaderWrapper #standardHeaderTop #standardHeaderTopRight #standardHeaderTopRightTop {
+.standardHeader .standardHeaderWrapper .standardHeaderTop .standardHeaderTopRight .standardHeaderTopRightTop {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   justify-content: flex-end;
 }
 @media (max-width: 768px) {
-  #standardHeader #standardHeaderWrapper #standardHeaderTop #standardHeaderTopRight #standardHeaderTopRightTop {
+  .standardHeader .standardHeaderWrapper .standardHeaderTop .standardHeaderTopRight .standardHeaderTopRightTop {
     text-align: center;
     order: 3;
   }
 }
-#standardHeader #standardHeaderWrapper #standardHeaderTop #standardHeaderTopRight #standardHeaderTopRightTop #standardHeaderMyPages {
+.standardHeader .standardHeaderWrapper .standardHeaderTop .standardHeaderTopRight .standardHeaderTopRightTop .standardHeaderMyPages {
   display: inline-block;
   flex: 1 1 auto;
 }
 @media (max-width: 768px) {
-  #standardHeader #standardHeaderWrapper #standardHeaderTop #standardHeaderTopRight #standardHeaderTopRightTop #standardHeaderMyPages {
+  .standardHeader .standardHeaderWrapper .standardHeaderTop .standardHeaderTopRight .standardHeaderTopRightTop .standardHeaderMyPages {
     display: none;
   }
 }
-#standardHeader #standardHeaderWrapper #standardHeaderTop #standardHeaderTopRight #standardHeaderTopRightTop #standardHeaderMyPages a {
+.standardHeader .standardHeaderWrapper .standardHeaderTop .standardHeaderTopRight .standardHeaderTopRightTop .standardHeaderMyPages a {
   display: inline-block;
   padding: 0.5em 0.938em;
   font-size: 18px;
@@ -16985,38 +17580,38 @@ a.cs9HyperLink {
   border: 1px solid #006179;
   color: #FFFFFF;
 }
-#standardHeader #standardHeaderWrapper #standardHeaderTop #standardHeaderTopRight #standardHeaderTopRightTop #standardHeaderMyPages a:hover {
+.standardHeader .standardHeaderWrapper .standardHeaderTop .standardHeaderTopRight .standardHeaderTopRightTop .standardHeaderMyPages a:hover {
   -webkit-filter: brightness(110%);
   filter: brightness(110%);
 }
-#standardHeader #standardHeaderWrapper #standardHeaderTop #standardHeaderTopRight #standardHeaderTopRightTop #standardHeaderMyPages a.showLoading {
+.standardHeader .standardHeaderWrapper .standardHeaderTop .standardHeaderTopRight .standardHeaderTopRightTop .standardHeaderMyPages a.showLoading {
   padding-right: 2.5em;
 }
-#standardHeader #standardHeaderWrapper #standardHeaderTop #standardHeaderTopRight #standardHeaderTopRightTop #standardHeaderMyPages a.showLoading:hover {
+.standardHeader .standardHeaderWrapper .standardHeaderTop .standardHeaderTopRight .standardHeaderTopRightTop .standardHeaderMyPages a.showLoading:hover {
   -webkit-filter: none;
   filter: none;
   cursor: default;
   pointer-events: none;
 }
-#standardHeader #standardHeaderWrapper #standardHeaderTop #standardHeaderTopRight #standardHeaderTopRightTop #standardHeaderMyPages a.showLoadingNoPadding:hover {
+.standardHeader .standardHeaderWrapper .standardHeaderTop .standardHeaderTopRight .standardHeaderTopRightTop .standardHeaderMyPages a.showLoadingNoPadding:hover {
   -webkit-filter: none;
   filter: none;
   cursor: default;
   pointer-events: none;
 }
-#standardHeader #standardHeaderWrapper #standardHeaderTop #standardHeaderTopRight #standardHeaderTopRightTop #standardHeaderMyPages a.showLoadingReplace:hover {
+.standardHeader .standardHeaderWrapper .standardHeaderTop .standardHeaderTopRight .standardHeaderTopRightTop .standardHeaderMyPages a.showLoadingReplace:hover {
   -webkit-filter: none;
   filter: none;
   cursor: default;
   pointer-events: none;
 }
-#standardHeader #standardHeaderWrapper #standardHeaderTop #standardHeaderTopRight #standardHeaderTopRightTop #standardHeaderMyPages a.disableHover {
+.standardHeader .standardHeaderWrapper .standardHeaderTop .standardHeaderTopRight .standardHeaderTopRightTop .standardHeaderMyPages a.disableHover {
   -webkit-filter: none;
   filter: none;
   cursor: default;
   pointer-events: none;
 }
-#standardHeader #standardHeaderWrapper #standardHeaderTop #standardHeaderTopRight #standardHeaderTopRightTop #standardHeaderMyPages a.showLoading {
+.standardHeader .standardHeaderWrapper .standardHeaderTop .standardHeaderTopRight .standardHeaderTopRightTop .standardHeaderMyPages a.showLoading {
   cursor: default;
   background-size: 32px;
   color: #006179;
@@ -17026,10 +17621,10 @@ a.cs9HyperLink {
   background-position-x: right;
   background-position-y: center;
 }
-#standardHeader #standardHeaderWrapper #standardHeaderTop #standardHeaderTopRight #standardHeaderTopRightTop #standardHeaderMyPages a.showLoading.disabled {
+.standardHeader .standardHeaderWrapper .standardHeaderTop .standardHeaderTopRight .standardHeaderTopRightTop .standardHeaderMyPages a.showLoading.disabled {
   background-image: none;
 }
-#standardHeader #standardHeaderWrapper #standardHeaderTop #standardHeaderTopRight #standardHeaderTopRightTop #standardHeaderMyPages a.showLoadingNoPadding {
+.standardHeader .standardHeaderWrapper .standardHeaderTop .standardHeaderTopRight .standardHeaderTopRightTop .standardHeaderMyPages a.showLoadingNoPadding {
   cursor: default;
   background-size: 32px;
   color: #006179;
@@ -17039,10 +17634,10 @@ a.cs9HyperLink {
   background-position-x: right;
   background-position-y: center;
 }
-#standardHeader #standardHeaderWrapper #standardHeaderTop #standardHeaderTopRight #standardHeaderTopRightTop #standardHeaderMyPages a.showLoadingNoPadding.disabled {
+.standardHeader .standardHeaderWrapper .standardHeaderTop .standardHeaderTopRight .standardHeaderTopRightTop .standardHeaderMyPages a.showLoadingNoPadding.disabled {
   background-image: none;
 }
-#standardHeader #standardHeaderWrapper #standardHeaderTop #standardHeaderTopRight #standardHeaderTopRightTop #standardHeaderMyPages a.showLoadingReplace {
+.standardHeader .standardHeaderWrapper .standardHeaderTop .standardHeaderTopRight .standardHeaderTopRightTop .standardHeaderMyPages a.showLoadingReplace {
   cursor: default;
   background-size: 32px;
   color: #006179;
@@ -17054,52 +17649,61 @@ a.cs9HyperLink {
   background-position-x: center;
   color: transparent;
 }
-#standardHeader #standardHeaderWrapper #standardHeaderTop #standardHeaderTopRight #standardHeaderTopRightTop #standardHeaderMyPages a.showLoadingReplace.disabled {
+.standardHeader .standardHeaderWrapper .standardHeaderTop .standardHeaderTopRight .standardHeaderTopRightTop .standardHeaderMyPages a.showLoadingReplace.disabled {
   background-image: none;
 }
-#standardHeader #standardHeaderWrapper #standardHeaderTop #standardHeaderTopRight #standardHeaderTopRightTop #standardHeaderMyPages a.disabled {
+.standardHeader .standardHeaderWrapper .standardHeaderTop .standardHeaderTopRight .standardHeaderTopRightTop .standardHeaderMyPages a.disabled {
   color: #fff;
   background-color: #A8A8A7;
   border-color: #A8A8A7;
 }
-#standardHeader #standardHeaderWrapper #standardHeaderTop #standardHeaderTopRight #standardHeaderTopRightTop #standardHeaderMyPages a.disabled:hover {
+.standardHeader .standardHeaderWrapper .standardHeaderTop .standardHeaderTopRight .standardHeaderTopRightTop .standardHeaderMyPages a.disabled:hover {
   cursor: not-allowed;
 }
-#standardHeader #standardHeaderWrapper #standardHeaderTop #standardHeaderTopRight #standardHeaderTopRightTop #standardHeaderLanguage {
+.standardHeader .standardHeaderWrapper .standardHeaderTop .standardHeaderTopRight .standardHeaderTopRightTop .standardHeaderLanguage {
   flex: 1 1 auto;
 }
-#standardHeader #standardHeaderWrapper #standardHeaderTop #standardHeaderTopRight #standardHeaderTopRightTop #standardHeaderLanguage .languageList {
+.standardHeader .standardHeaderWrapper .standardHeaderTop .standardHeaderTopRight .standardHeaderTopRightTop .standardHeaderLanguage .languageList {
   font-size: 0;
   cursor: pointer;
   position: relative;
   display: inline-block;
 }
-#standardHeader #standardHeaderWrapper #standardHeaderTop #standardHeaderTopRight #standardHeaderTopRightTop #standardHeaderLanguage .languageList:hover .languageListOptions {
+.standardHeader .standardHeaderWrapper .standardHeaderTop .standardHeaderTopRight .standardHeaderTopRightTop .standardHeaderLanguage .languageList:hover .languageListOptions {
   display: block;
 }
-#standardHeader #standardHeaderWrapper #standardHeaderTop #standardHeaderTopRight #standardHeaderTopRightTop #standardHeaderLanguage .languageList .languageItem {
+.standardHeader .standardHeaderWrapper .standardHeaderTop .standardHeaderTopRight .standardHeaderTopRightTop .standardHeaderLanguage .languageList .languageItem {
   display: inline-block;
   padding: 10px;
   transition: 0.5s ease all;
 }
-#standardHeader #standardHeaderWrapper #standardHeaderTop #standardHeaderTopRight #standardHeaderTopRightTop #standardHeaderLanguage .languageList .languageItem:hover {
+.standardHeader .standardHeaderWrapper .standardHeaderTop .standardHeaderTopRight .standardHeaderTopRightTop .standardHeaderLanguage .languageList .languageItem .languageLink {
+  text-decoration: none;
+}
+.standardHeader .standardHeaderWrapper .standardHeaderTop .standardHeaderTopRight .standardHeaderTopRightTop .standardHeaderLanguage .languageList .languageItem .languageText {
+  display: block;
+  text-align: center;
+}
+.standardHeader .standardHeaderWrapper .standardHeaderTop .standardHeaderTopRight .standardHeaderTopRightTop .standardHeaderLanguage .languageList .languageItem:hover {
   transform: scale(1.1);
 }
 @media (max-width: 768px) {
-  #standardHeader #standardHeaderWrapper #standardHeaderTop #standardHeaderTopRight #standardHeaderTopRightTop #standardHeaderLanguage .languageList .languageItem.selected {
+  .standardHeader .standardHeaderWrapper .standardHeaderTop .standardHeaderTopRight .standardHeaderTopRightTop .standardHeaderLanguage .languageList .languageItem.selected {
     padding: 0 10px;
   }
 }
-#standardHeader #standardHeaderWrapper #standardHeaderTop #standardHeaderTopRight #standardHeaderTopRightTop #standardHeaderLanguage .languageList .languageItem img {
+.standardHeader .standardHeaderWrapper .standardHeaderTop .standardHeaderTopRight .standardHeaderTopRightTop .standardHeaderLanguage .languageList .languageItem img {
   height: 40px;
   border-radius: 50%;
+  display: block;
+  margin: 0 auto;
 }
 @media (max-width: 768px) {
-  #standardHeader #standardHeaderWrapper #standardHeaderTop #standardHeaderTopRight #standardHeaderTopRightTop #standardHeaderLanguage .languageList .languageItem img {
+  .standardHeader .standardHeaderWrapper .standardHeaderTop .standardHeaderTopRight .standardHeaderTopRightTop .standardHeaderLanguage .languageList .languageItem img {
     height: 25px;
   }
 }
-#standardHeader #standardHeaderWrapper #standardHeaderTop #standardHeaderTopRight #standardHeaderTopRightTop #standardHeaderLanguage .languageList .languageListOptions {
+.standardHeader .standardHeaderWrapper .standardHeaderTop .standardHeaderTopRight .standardHeaderTopRightTop .standardHeaderLanguage .languageList .languageListOptions {
   display: none;
   position: absolute;
   background: #FFFFFF;
@@ -17107,35 +17711,36 @@ a.cs9HyperLink {
   z-index: 3;
 }
 @media (max-width: 768px) {
-  #standardHeader #standardHeaderWrapper #standardHeaderTop #standardHeaderTopRight #standardHeaderTopRightTop #standardHeaderLanguage .languageList .languageListOptions {
+  .standardHeader .standardHeaderWrapper .standardHeaderTop .standardHeaderTopRight .standardHeaderTopRightTop .standardHeaderLanguage .languageList .languageListOptions {
     background: #A8A8A7;
   }
 }
-#standardHeader #standardHeaderWrapper #standardHeaderTop #standardHeaderTopRight #standardHeaderTopRightTop #standardHeaderLanguage .languageList .languageListOptions .languageItem.selectable {
+.standardHeader .standardHeaderWrapper .standardHeaderTop .standardHeaderTopRight .standardHeaderTopRightTop .standardHeaderLanguage .languageList .languageListOptions .languageItem.selectable {
+  background-color: #F2F2F2;
   display: block;
 }
-#standardHeader #standardHeaderWrapper #standardHeaderTop #standardHeaderTopRight #standardHeaderTopRightTop #standardHeaderSearch {
+.standardHeader .standardHeaderWrapper .standardHeaderTop .standardHeaderTopRight .standardHeaderTopRightTop .standardHeaderSearch {
   flex: 1 1 auto;
   display: inline-block;
 }
-#standardHeader #standardHeaderWrapper #standardHeaderTop #standardHeaderTopRight #standardHeaderTopRightTop #standardHeaderSearch .freeTextSearchWrapper .openSearchModal {
+.standardHeader .standardHeaderWrapper .standardHeaderTop .standardHeaderTopRight .standardHeaderTopRightTop .standardHeaderSearch .freeTextSearchWrapper .openSearchModal {
   display: inline-block;
   cursor: pointer;
   transition: 0.5s ease all;
 }
-#standardHeader #standardHeaderWrapper #standardHeaderTop #standardHeaderTopRight #standardHeaderTopRightTop #standardHeaderSearch .freeTextSearchWrapper .openSearchModal:hover {
+.standardHeader .standardHeaderWrapper .standardHeaderTop .standardHeaderTopRight .standardHeaderTopRightTop .standardHeaderSearch .freeTextSearchWrapper .openSearchModal:hover {
   color: #ED8335;
 }
-#standardHeader #standardHeaderWrapper #standardHeaderTop #standardHeaderTopRight #standardHeaderTopRightTop #standardHeaderSearch .freeTextSearchWrapper .openSearchModal i {
+.standardHeader .standardHeaderWrapper .standardHeaderTop .standardHeaderTopRight .standardHeaderTopRightTop .standardHeaderSearch .freeTextSearchWrapper .openSearchModal i {
   font-size: 36px;
 }
-#standardHeader #standardHeaderWrapper #standardHeaderTop #standardHeaderTopRight #standardHeaderTopRightTop #standardHeaderSearch .freeTextSearchWrapper .searchModal form {
+.standardHeader .standardHeaderWrapper .standardHeaderTop .standardHeaderTopRight .standardHeaderTopRightTop .standardHeaderSearch .freeTextSearchWrapper .searchModal form {
   display: flex;
 }
-#standardHeader #standardHeaderWrapper #standardHeaderTop #standardHeaderTopRight #standardHeaderTopRightTop #standardHeaderSearch .freeTextSearchWrapper .searchModal form .searchFieldWrapper {
+.standardHeader .standardHeaderWrapper .standardHeaderTop .standardHeaderTopRight .standardHeaderTopRightTop .standardHeaderSearch .freeTextSearchWrapper .searchModal form .searchFieldWrapper {
   flex: 1 1 110%;
 }
-#standardHeader #standardHeaderWrapper #standardHeaderTop #standardHeaderTopRight #standardHeaderTopRightTop #standardHeaderSearch .freeTextSearchWrapper input[type="submit"] {
+.standardHeader .standardHeaderWrapper .standardHeaderTop .standardHeaderTopRight .standardHeaderTopRightTop .standardHeaderSearch .freeTextSearchWrapper input[type="submit"] {
   display: inline-block;
   padding: 0.5em 0.938em;
   font-size: 18px;
@@ -17158,38 +17763,38 @@ a.cs9HyperLink {
   color: #FFFFFF;
   vertical-align: top;
 }
-#standardHeader #standardHeaderWrapper #standardHeaderTop #standardHeaderTopRight #standardHeaderTopRightTop #standardHeaderSearch .freeTextSearchWrapper input[type="submit"]:hover {
+.standardHeader .standardHeaderWrapper .standardHeaderTop .standardHeaderTopRight .standardHeaderTopRightTop .standardHeaderSearch .freeTextSearchWrapper input[type="submit"]:hover {
   -webkit-filter: brightness(110%);
   filter: brightness(110%);
 }
-#standardHeader #standardHeaderWrapper #standardHeaderTop #standardHeaderTopRight #standardHeaderTopRightTop #standardHeaderSearch .freeTextSearchWrapper input[type="submit"].showLoading {
+.standardHeader .standardHeaderWrapper .standardHeaderTop .standardHeaderTopRight .standardHeaderTopRightTop .standardHeaderSearch .freeTextSearchWrapper input[type="submit"].showLoading {
   padding-right: 2.5em;
 }
-#standardHeader #standardHeaderWrapper #standardHeaderTop #standardHeaderTopRight #standardHeaderTopRightTop #standardHeaderSearch .freeTextSearchWrapper input[type="submit"].showLoading:hover {
+.standardHeader .standardHeaderWrapper .standardHeaderTop .standardHeaderTopRight .standardHeaderTopRightTop .standardHeaderSearch .freeTextSearchWrapper input[type="submit"].showLoading:hover {
   -webkit-filter: none;
   filter: none;
   cursor: default;
   pointer-events: none;
 }
-#standardHeader #standardHeaderWrapper #standardHeaderTop #standardHeaderTopRight #standardHeaderTopRightTop #standardHeaderSearch .freeTextSearchWrapper input[type="submit"].showLoadingNoPadding:hover {
+.standardHeader .standardHeaderWrapper .standardHeaderTop .standardHeaderTopRight .standardHeaderTopRightTop .standardHeaderSearch .freeTextSearchWrapper input[type="submit"].showLoadingNoPadding:hover {
   -webkit-filter: none;
   filter: none;
   cursor: default;
   pointer-events: none;
 }
-#standardHeader #standardHeaderWrapper #standardHeaderTop #standardHeaderTopRight #standardHeaderTopRightTop #standardHeaderSearch .freeTextSearchWrapper input[type="submit"].showLoadingReplace:hover {
+.standardHeader .standardHeaderWrapper .standardHeaderTop .standardHeaderTopRight .standardHeaderTopRightTop .standardHeaderSearch .freeTextSearchWrapper input[type="submit"].showLoadingReplace:hover {
   -webkit-filter: none;
   filter: none;
   cursor: default;
   pointer-events: none;
 }
-#standardHeader #standardHeaderWrapper #standardHeaderTop #standardHeaderTopRight #standardHeaderTopRightTop #standardHeaderSearch .freeTextSearchWrapper input[type="submit"].disableHover {
+.standardHeader .standardHeaderWrapper .standardHeaderTop .standardHeaderTopRight .standardHeaderTopRightTop .standardHeaderSearch .freeTextSearchWrapper input[type="submit"].disableHover {
   -webkit-filter: none;
   filter: none;
   cursor: default;
   pointer-events: none;
 }
-#standardHeader #standardHeaderWrapper #standardHeaderTop #standardHeaderTopRight #standardHeaderTopRightTop #standardHeaderSearch .freeTextSearchWrapper input[type="submit"].showLoading {
+.standardHeader .standardHeaderWrapper .standardHeaderTop .standardHeaderTopRight .standardHeaderTopRightTop .standardHeaderSearch .freeTextSearchWrapper input[type="submit"].showLoading {
   cursor: default;
   background-size: 32px;
   color: #006179;
@@ -17199,10 +17804,10 @@ a.cs9HyperLink {
   background-position-x: right;
   background-position-y: center;
 }
-#standardHeader #standardHeaderWrapper #standardHeaderTop #standardHeaderTopRight #standardHeaderTopRightTop #standardHeaderSearch .freeTextSearchWrapper input[type="submit"].showLoading.disabled {
+.standardHeader .standardHeaderWrapper .standardHeaderTop .standardHeaderTopRight .standardHeaderTopRightTop .standardHeaderSearch .freeTextSearchWrapper input[type="submit"].showLoading.disabled {
   background-image: none;
 }
-#standardHeader #standardHeaderWrapper #standardHeaderTop #standardHeaderTopRight #standardHeaderTopRightTop #standardHeaderSearch .freeTextSearchWrapper input[type="submit"].showLoadingNoPadding {
+.standardHeader .standardHeaderWrapper .standardHeaderTop .standardHeaderTopRight .standardHeaderTopRightTop .standardHeaderSearch .freeTextSearchWrapper input[type="submit"].showLoadingNoPadding {
   cursor: default;
   background-size: 32px;
   color: #006179;
@@ -17212,10 +17817,10 @@ a.cs9HyperLink {
   background-position-x: right;
   background-position-y: center;
 }
-#standardHeader #standardHeaderWrapper #standardHeaderTop #standardHeaderTopRight #standardHeaderTopRightTop #standardHeaderSearch .freeTextSearchWrapper input[type="submit"].showLoadingNoPadding.disabled {
+.standardHeader .standardHeaderWrapper .standardHeaderTop .standardHeaderTopRight .standardHeaderTopRightTop .standardHeaderSearch .freeTextSearchWrapper input[type="submit"].showLoadingNoPadding.disabled {
   background-image: none;
 }
-#standardHeader #standardHeaderWrapper #standardHeaderTop #standardHeaderTopRight #standardHeaderTopRightTop #standardHeaderSearch .freeTextSearchWrapper input[type="submit"].showLoadingReplace {
+.standardHeader .standardHeaderWrapper .standardHeaderTop .standardHeaderTopRight .standardHeaderTopRightTop .standardHeaderSearch .freeTextSearchWrapper input[type="submit"].showLoadingReplace {
   cursor: default;
   background-size: 32px;
   color: #006179;
@@ -17227,32 +17832,32 @@ a.cs9HyperLink {
   background-position-x: center;
   color: transparent;
 }
-#standardHeader #standardHeaderWrapper #standardHeaderTop #standardHeaderTopRight #standardHeaderTopRightTop #standardHeaderSearch .freeTextSearchWrapper input[type="submit"].showLoadingReplace.disabled {
+.standardHeader .standardHeaderWrapper .standardHeaderTop .standardHeaderTopRight .standardHeaderTopRightTop .standardHeaderSearch .freeTextSearchWrapper input[type="submit"].showLoadingReplace.disabled {
   background-image: none;
 }
-#standardHeader #standardHeaderWrapper #standardHeaderTop #standardHeaderTopRight #standardHeaderTopRightTop #standardHeaderSearch .freeTextSearchWrapper input[type="submit"].disabled {
+.standardHeader .standardHeaderWrapper .standardHeaderTop .standardHeaderTopRight .standardHeaderTopRightTop .standardHeaderSearch .freeTextSearchWrapper input[type="submit"].disabled {
   color: #fff;
   background-color: #A8A8A7;
   border-color: #A8A8A7;
 }
-#standardHeader #standardHeaderWrapper #standardHeaderTop #standardHeaderTopRight #standardHeaderTopRightTop #standardHeaderSearch .freeTextSearchWrapper input[type="submit"].disabled:hover {
+.standardHeader .standardHeaderWrapper .standardHeaderTop .standardHeaderTopRight .standardHeaderTopRightTop .standardHeaderSearch .freeTextSearchWrapper input[type="submit"].disabled:hover {
   cursor: not-allowed;
 }
 @media (max-width: 768px) {
-  #standardHeader #standardHeaderWrapper #standardHeaderTop #standardHeaderTopRight #standardHeaderTopRightBottom {
+  .standardHeader .standardHeaderWrapper .standardHeaderTop .standardHeaderTopRight .standardHeaderTopRightBottom {
     order: 2;
     margin: 0 auto;
   }
 }
-#standardHeader #standardHeaderWrapper #standardHeaderTop #standardHeaderTopRight #standardHeaderTopRightBottom #standardHeaderCart {
+.standardHeader .standardHeaderWrapper .standardHeaderTop .standardHeaderTopRight .standardHeaderTopRightBottom .standardHeaderCart {
   text-align: right;
 }
-#standardHeader #standardHeaderWrapper #standardHeaderBottom {
+.standardHeader .standardHeaderWrapper .standardHeaderBottom {
   margin: 10px 0;
   transition: 0.5s ease all;
 }
 @media (max-width: 768px) {
-  #standardHeader #standardHeaderWrapper #standardHeaderBottom {
+  .standardHeader .standardHeaderWrapper .standardHeaderBottom {
     width: 300px;
     position: fixed;
     left: -300px;
@@ -17265,32 +17870,48 @@ a.cs9HyperLink {
   }
 }
 @media (max-width: 576px) {
-  #standardHeader #standardHeaderWrapper #standardHeaderBottom {
+  .standardHeader .standardHeaderWrapper .standardHeaderBottom {
     width: 100%;
     left: -100%;
   }
 }
-#standardHeader #standardHeaderWrapper #standardHeaderBottom.showMobileMenu {
+.standardHeader .standardHeaderWrapper .standardHeaderBottom .headerLayoutMobileLogo {
+  display: none;
+}
+@media (max-width: 768px) {
+  .standardHeader .standardHeaderWrapper .standardHeaderBottom .headerLayoutMobileLogo {
+    display: block;
+  }
+}
+.standardHeader .standardHeaderWrapper .standardHeaderBottom .headerLayoutMobileLogo .headerLayoutLogoImage {
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .standardHeader .standardHeaderWrapper .standardHeaderBottom .headerLayoutMobileLogo .headerLayoutLogoImage {
+    max-height: 60px;
+  }
+}
+.standardHeader .standardHeaderWrapper .standardHeaderBottom.showMobileMenu {
   left: 0;
 }
-#standardHeader #standardHeaderWrapper #standardHeaderBottom #standardHeaderMobileClose {
+.standardHeader .standardHeaderWrapper .standardHeaderBottom .standardHeaderMobileClose {
   display: none;
   width: 100%;
   text-align: right;
   cursor: pointer;
 }
-#standardHeader #standardHeaderWrapper #standardHeaderBottom #standardHeaderMobileClose i {
+.standardHeader .standardHeaderWrapper .standardHeaderBottom .standardHeaderMobileClose i {
   padding: 5px;
 }
-#standardHeader #standardHeaderWrapper #standardHeaderBottom #standardHeaderMobileClose:hover {
+.standardHeader .standardHeaderWrapper .standardHeaderBottom .standardHeaderMobileClose:hover {
   color: #ED8335;
 }
 @media (max-width: 768px) {
-  #standardHeader #standardHeaderWrapper #standardHeaderBottom #standardHeaderMobileClose {
+  .standardHeader .standardHeaderWrapper .standardHeaderBottom .standardHeaderMobileClose {
     display: block;
   }
 }
-#standardHeader #standardHeaderWrapper #standardHeaderBottom #standardHeaderBottomLogo {
+.standardHeader .standardHeaderWrapper .standardHeaderBottom .standardHeaderBottomLogo {
   display: none;
   padding: 10px;
   box-sizing: border-box;
@@ -17298,32 +17919,32 @@ a.cs9HyperLink {
   text-align: center;
 }
 @media (max-width: 768px) {
-  #standardHeader #standardHeaderWrapper #standardHeaderBottom #standardHeaderBottomLogo {
+  .standardHeader .standardHeaderWrapper .standardHeaderBottom .standardHeaderBottomLogo {
     display: block;
   }
 }
-#standardHeader #standardHeaderWrapper #standardHeaderBottom #standardHeaderBottomLogo a img {
+.standardHeader .standardHeaderWrapper .standardHeaderBottom .standardHeaderBottomLogo a img {
   max-width: 300px;
   max-height: 70px;
   width: auto;
   height: auto;
 }
 @media (max-width: 768px) {
-  #standardHeader #standardHeaderWrapper #standardHeaderBottom #standardHeaderBottomLogo a img {
+  .standardHeader .standardHeaderWrapper .standardHeaderBottom .standardHeaderBottomLogo a img {
     max-width: 100%;
   }
 }
-#standardHeader #standardHeaderWrapper #standardHeaderBottom #standardHeaderBottomMyPages {
+.standardHeader .standardHeaderWrapper .standardHeaderBottom .standardHeaderBottomMyPages {
   display: none;
   text-align: center;
   margin: 10px 0;
 }
 @media (max-width: 768px) {
-  #standardHeader #standardHeaderWrapper #standardHeaderBottom #standardHeaderBottomMyPages {
+  .standardHeader .standardHeaderWrapper .standardHeaderBottom .standardHeaderBottomMyPages {
     display: block;
   }
 }
-#standardHeader #standardHeaderWrapper #standardHeaderBottom #standardHeaderBottomMyPages a {
+.standardHeader .standardHeaderWrapper .standardHeaderBottom .standardHeaderBottomMyPages a {
   display: inline-block;
   padding: 0.5em 0.938em;
   font-size: 18px;
@@ -17345,38 +17966,38 @@ a.cs9HyperLink {
   border: 1px solid #006179;
   color: #FFFFFF;
 }
-#standardHeader #standardHeaderWrapper #standardHeaderBottom #standardHeaderBottomMyPages a:hover {
+.standardHeader .standardHeaderWrapper .standardHeaderBottom .standardHeaderBottomMyPages a:hover {
   -webkit-filter: brightness(110%);
   filter: brightness(110%);
 }
-#standardHeader #standardHeaderWrapper #standardHeaderBottom #standardHeaderBottomMyPages a.showLoading {
+.standardHeader .standardHeaderWrapper .standardHeaderBottom .standardHeaderBottomMyPages a.showLoading {
   padding-right: 2.5em;
 }
-#standardHeader #standardHeaderWrapper #standardHeaderBottom #standardHeaderBottomMyPages a.showLoading:hover {
+.standardHeader .standardHeaderWrapper .standardHeaderBottom .standardHeaderBottomMyPages a.showLoading:hover {
   -webkit-filter: none;
   filter: none;
   cursor: default;
   pointer-events: none;
 }
-#standardHeader #standardHeaderWrapper #standardHeaderBottom #standardHeaderBottomMyPages a.showLoadingNoPadding:hover {
+.standardHeader .standardHeaderWrapper .standardHeaderBottom .standardHeaderBottomMyPages a.showLoadingNoPadding:hover {
   -webkit-filter: none;
   filter: none;
   cursor: default;
   pointer-events: none;
 }
-#standardHeader #standardHeaderWrapper #standardHeaderBottom #standardHeaderBottomMyPages a.showLoadingReplace:hover {
+.standardHeader .standardHeaderWrapper .standardHeaderBottom .standardHeaderBottomMyPages a.showLoadingReplace:hover {
   -webkit-filter: none;
   filter: none;
   cursor: default;
   pointer-events: none;
 }
-#standardHeader #standardHeaderWrapper #standardHeaderBottom #standardHeaderBottomMyPages a.disableHover {
+.standardHeader .standardHeaderWrapper .standardHeaderBottom .standardHeaderBottomMyPages a.disableHover {
   -webkit-filter: none;
   filter: none;
   cursor: default;
   pointer-events: none;
 }
-#standardHeader #standardHeaderWrapper #standardHeaderBottom #standardHeaderBottomMyPages a.showLoading {
+.standardHeader .standardHeaderWrapper .standardHeaderBottom .standardHeaderBottomMyPages a.showLoading {
   cursor: default;
   background-size: 32px;
   color: #006179;
@@ -17386,10 +18007,10 @@ a.cs9HyperLink {
   background-position-x: right;
   background-position-y: center;
 }
-#standardHeader #standardHeaderWrapper #standardHeaderBottom #standardHeaderBottomMyPages a.showLoading.disabled {
+.standardHeader .standardHeaderWrapper .standardHeaderBottom .standardHeaderBottomMyPages a.showLoading.disabled {
   background-image: none;
 }
-#standardHeader #standardHeaderWrapper #standardHeaderBottom #standardHeaderBottomMyPages a.showLoadingNoPadding {
+.standardHeader .standardHeaderWrapper .standardHeaderBottom .standardHeaderBottomMyPages a.showLoadingNoPadding {
   cursor: default;
   background-size: 32px;
   color: #006179;
@@ -17399,10 +18020,10 @@ a.cs9HyperLink {
   background-position-x: right;
   background-position-y: center;
 }
-#standardHeader #standardHeaderWrapper #standardHeaderBottom #standardHeaderBottomMyPages a.showLoadingNoPadding.disabled {
+.standardHeader .standardHeaderWrapper .standardHeaderBottom .standardHeaderBottomMyPages a.showLoadingNoPadding.disabled {
   background-image: none;
 }
-#standardHeader #standardHeaderWrapper #standardHeaderBottom #standardHeaderBottomMyPages a.showLoadingReplace {
+.standardHeader .standardHeaderWrapper .standardHeaderBottom .standardHeaderBottomMyPages a.showLoadingReplace {
   cursor: default;
   background-size: 32px;
   color: #006179;
@@ -17414,25 +18035,25 @@ a.cs9HyperLink {
   background-position-x: center;
   color: transparent;
 }
-#standardHeader #standardHeaderWrapper #standardHeaderBottom #standardHeaderBottomMyPages a.showLoadingReplace.disabled {
+.standardHeader .standardHeaderWrapper .standardHeaderBottom .standardHeaderBottomMyPages a.showLoadingReplace.disabled {
   background-image: none;
 }
-#standardHeader #standardHeaderWrapper #standardHeaderBottom #standardHeaderBottomMyPages a.disabled {
+.standardHeader .standardHeaderWrapper .standardHeaderBottom .standardHeaderBottomMyPages a.disabled {
   color: #fff;
   background-color: #A8A8A7;
   border-color: #A8A8A7;
 }
-#standardHeader #standardHeaderWrapper #standardHeaderBottom #standardHeaderBottomMyPages a.disabled:hover {
+.standardHeader .standardHeaderWrapper .standardHeaderBottom .standardHeaderBottomMyPages a.disabled:hover {
   cursor: not-allowed;
 }
-#standardHeader #standardHeaderWrapper #standardHeaderBottom #standardHeaderMenu {
+.standardHeader .standardHeaderWrapper .standardHeaderBottom .standardHeaderMenu {
   text-align: center;
 }
-#standardHeader #standardHeaderWrapper #standardHeaderBottom #standardHeaderMenu .navMain {
+.standardHeader .standardHeaderWrapper .standardHeaderBottom .standardHeaderMenu .navMain {
   background-color: #F2F2F2;
   font-size: 0;
 }
-#standardHeader #standardHeaderWrapper #standardHeaderBottom #standardHeaderMenu .navChild {
+.standardHeader .standardHeaderWrapper .standardHeaderBottom .standardHeaderMenu .navChild {
   display: none;
   background-color: #F2F2F2;
   position: absolute;
@@ -17442,25 +18063,22 @@ a.cs9HyperLink {
   min-width: 100%;
 }
 @media (max-width: 768px) {
-  #standardHeader #standardHeaderWrapper #standardHeaderBottom #standardHeaderMenu .navChild {
+  .standardHeader .standardHeaderWrapper .standardHeaderBottom .standardHeaderMenu .navChild {
     position: relative;
   }
 }
-#standardHeader #standardHeaderWrapper #standardHeaderBottom #standardHeaderMenu .navItem {
+.standardHeader .standardHeaderWrapper .standardHeaderBottom .standardHeaderMenu .navItem {
   position: relative;
   white-space: nowrap;
   cursor: pointer;
 }
 @media (max-width: 768px) {
-  #standardHeader #standardHeaderWrapper #standardHeaderBottom #standardHeaderMenu .navItem {
+  .standardHeader .standardHeaderWrapper .standardHeaderBottom .standardHeaderMenu .navItem {
     padding: 0;
     display: block;
   }
 }
-#standardHeader #standardHeaderWrapper #standardHeaderBottom #standardHeaderMenu .navItem:hover {
-  background-color: #D0D0D0;
-}
-#standardHeader #standardHeaderWrapper #standardHeaderBottom #standardHeaderMenu .navItem a {
+.standardHeader .standardHeaderWrapper .standardHeaderBottom .standardHeaderMenu .navItem a {
   display: inline-block;
   text-decoration: none;
   color: #222;
@@ -17469,60 +18087,208 @@ a.cs9HyperLink {
   padding: 10px 15px;
 }
 @media (max-width: 768px) {
-  #standardHeader #standardHeaderWrapper #standardHeaderBottom #standardHeaderMenu .navItem a {
+  .standardHeader .standardHeaderWrapper .standardHeaderBottom .standardHeaderMenu .navItem a {
     padding: 10px 20px;
     text-align: left;
     display: block;
   }
 }
-#standardHeader #standardHeaderWrapper #standardHeaderBottom #standardHeaderMenu .navItemMain {
+.standardHeader .standardHeaderWrapper .standardHeaderBottom .standardHeaderMenu .navItemMain {
   display: inline-block;
 }
 @media (max-width: 768px) {
-  #standardHeader #standardHeaderWrapper #standardHeaderBottom #standardHeaderMenu .navItemMain {
+  .standardHeader .standardHeaderWrapper .standardHeaderBottom .standardHeaderMenu .navItemMain {
     display: block;
   }
 }
-#standardHeader #standardHeaderWrapper #standardHeaderBottom #standardHeaderMenu .navItemMain:hover .navChild {
+.standardHeader .standardHeaderWrapper .standardHeaderBottom .standardHeaderMenu .navItemMain:hover .navChild {
   display: block;
 }
 @media (max-width: 768px) {
-  #standardHeader #standardHeaderWrapper #standardHeaderBottom #standardHeaderMenu .navItemMain:hover .navChild {
+  .standardHeader .standardHeaderWrapper .standardHeaderBottom .standardHeaderMenu .navItemMain:hover .navChild {
     display: none;
   }
 }
 @media (max-width: 768px) {
-  #standardHeader #standardHeaderWrapper #standardHeaderBottom #standardHeaderMenu .navItemMain .navItemRow {
+  .standardHeader .standardHeaderWrapper .standardHeaderBottom .standardHeaderMenu .navItemMain .navItemRow {
     display: flex;
     align-items: center;
   }
 }
 @media (max-width: 768px) {
-  #standardHeader #standardHeaderWrapper #standardHeaderBottom #standardHeaderMenu .navItemMain .navItemRow a {
+  .standardHeader .standardHeaderWrapper .standardHeaderBottom .standardHeaderMenu .navItemMain .navItemRow a {
     flex: 1 1 100%;
   }
 }
-#standardHeader #standardHeaderWrapper #standardHeaderBottom #standardHeaderMenu .navItemMain .navItemRow .navExpander {
+.standardHeader .standardHeaderWrapper .standardHeaderBottom .standardHeaderMenu .navItemMain .navItemRow .navExpander {
   display: none;
 }
-#standardHeader #standardHeaderWrapper #standardHeaderBottom #standardHeaderMenu .navItemMain .navItemRow .navExpander.rotate i {
+.standardHeader .standardHeaderWrapper .standardHeaderBottom .standardHeaderMenu .navItemMain .navItemRow .navExpander.rotate i {
   transform: rotate(-180deg);
 }
 @media (max-width: 768px) {
-  #standardHeader #standardHeaderWrapper #standardHeaderBottom #standardHeaderMenu .navItemMain .navItemRow .navExpander {
+  .standardHeader .standardHeaderWrapper .standardHeaderBottom .standardHeaderMenu .navItemMain .navItemRow .navExpander {
     display: inline-block;
   }
 }
-#standardHeader #standardHeaderWrapper #standardHeaderBottom #standardHeaderMenu .navItemMain .navItemRow .navExpander i {
+.standardHeader .standardHeaderWrapper .standardHeaderBottom .standardHeaderMenu .navItemMain .navItemRow .navExpander i {
   transition: 0.5s ease all;
   padding: 5px;
 }
-#standardHeader #standardHeaderWrapper #standardHeaderBottom #standardHeaderMenu .navItemSub {
+.standardHeader .standardHeaderWrapper .standardHeaderBottom .standardHeaderMenu .navItemSub {
   text-align: left;
 }
 @media (max-width: 768px) {
-  #standardHeader #standardHeaderWrapper #standardHeaderBottom #standardHeaderMenu .navItemSub a {
+  .standardHeader .standardHeaderWrapper .standardHeaderBottom .standardHeaderMenu .navItemSub a {
     padding: 10px 20px 10px 40px;
+  }
+}
+.headerLayout {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: #F2F2F2;
+  border-bottom: 4px solid #006179;
+  margin-bottom: 20px;
+}
+.headerBookButton {
+  display: inline-block;
+  padding: 0.5em 0.938em;
+  font-size: 18px;
+  line-height: 18px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 400;
+  border-radius: 2px;
+  outline: none;
+  margin: 0;
+  text-transform: uppercase;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #006179;
+  border: 1px solid #006179;
+  color: #FFFFFF;
+}
+.headerBookButton:hover {
+  -webkit-filter: brightness(110%);
+  filter: brightness(110%);
+}
+.headerBookButton.showLoading {
+  padding-right: 2.5em;
+}
+.headerBookButton.showLoading:hover {
+  -webkit-filter: none;
+  filter: none;
+  cursor: default;
+  pointer-events: none;
+}
+.headerBookButton.showLoadingNoPadding:hover {
+  -webkit-filter: none;
+  filter: none;
+  cursor: default;
+  pointer-events: none;
+}
+.headerBookButton.showLoadingReplace:hover {
+  -webkit-filter: none;
+  filter: none;
+  cursor: default;
+  pointer-events: none;
+}
+.headerBookButton.disableHover {
+  -webkit-filter: none;
+  filter: none;
+  cursor: default;
+  pointer-events: none;
+}
+.headerBookButton.showLoading {
+  cursor: default;
+  background-size: 32px;
+  color: #006179;
+  background-color: #FFF;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjRweCIgIGhlaWdodD0iNjRweCIgIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89InhNaWRZTWlkIiBjbGFzcz0ibGRzLXJvbGxpbmciIHN0eWxlPSJiYWNrZ3JvdW5kOiBub25lOyI+PGNpcmNsZSBjeD0iNTAiIGN5PSI1MCIgZmlsbD0ibm9uZSIgbmctYXR0ci1zdHJva2U9Int7Y29uZmlnLmNvbG9yfX0iIG5nLWF0dHItc3Ryb2tlLXdpZHRoPSJ7e2NvbmZpZy53aWR0aH19IiBuZy1hdHRyLXI9Int7Y29uZmlnLnJhZGl1c319IiBuZy1hdHRyLXN0cm9rZS1kYXNoYXJyYXk9Int7Y29uZmlnLmRhc2hhcnJheX19IiBzdHJva2U9IiMwMDYxNzkiIHN0cm9rZS13aWR0aD0iMTAiIHI9IjM1IiBzdHJva2UtZGFzaGFycmF5PSIxNjQuOTMzNjE0MzEzNDY0MTUgNTYuOTc3ODcxNDM3ODIxMzgiIHRyYW5zZm9ybT0icm90YXRlKDIxNS41MzEgNTAgNTApIj48YW5pbWF0ZVRyYW5zZm9ybSBhdHRyaWJ1dGVOYW1lPSJ0cmFuc2Zvcm0iIHR5cGU9InJvdGF0ZSIgY2FsY01vZGU9ImxpbmVhciIgdmFsdWVzPSIwIDUwIDUwOzM2MCA1MCA1MCIga2V5VGltZXM9IjA7MSIgZHVyPSIxcyIgYmVnaW49IjBzIiByZXBlYXRDb3VudD0iaW5kZWZpbml0ZSI+PC9hbmltYXRlVHJhbnNmb3JtPjwvY2lyY2xlPjwvc3ZnPg==);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: center;
+}
+.headerBookButton.showLoading.disabled {
+  background-image: none;
+}
+.headerBookButton.showLoadingNoPadding {
+  cursor: default;
+  background-size: 32px;
+  color: #006179;
+  background-color: #FFF;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjRweCIgIGhlaWdodD0iNjRweCIgIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89InhNaWRZTWlkIiBjbGFzcz0ibGRzLXJvbGxpbmciIHN0eWxlPSJiYWNrZ3JvdW5kOiBub25lOyI+PGNpcmNsZSBjeD0iNTAiIGN5PSI1MCIgZmlsbD0ibm9uZSIgbmctYXR0ci1zdHJva2U9Int7Y29uZmlnLmNvbG9yfX0iIG5nLWF0dHItc3Ryb2tlLXdpZHRoPSJ7e2NvbmZpZy53aWR0aH19IiBuZy1hdHRyLXI9Int7Y29uZmlnLnJhZGl1c319IiBuZy1hdHRyLXN0cm9rZS1kYXNoYXJyYXk9Int7Y29uZmlnLmRhc2hhcnJheX19IiBzdHJva2U9IiMwMDYxNzkiIHN0cm9rZS13aWR0aD0iMTAiIHI9IjM1IiBzdHJva2UtZGFzaGFycmF5PSIxNjQuOTMzNjE0MzEzNDY0MTUgNTYuOTc3ODcxNDM3ODIxMzgiIHRyYW5zZm9ybT0icm90YXRlKDIxNS41MzEgNTAgNTApIj48YW5pbWF0ZVRyYW5zZm9ybSBhdHRyaWJ1dGVOYW1lPSJ0cmFuc2Zvcm0iIHR5cGU9InJvdGF0ZSIgY2FsY01vZGU9ImxpbmVhciIgdmFsdWVzPSIwIDUwIDUwOzM2MCA1MCA1MCIga2V5VGltZXM9IjA7MSIgZHVyPSIxcyIgYmVnaW49IjBzIiByZXBlYXRDb3VudD0iaW5kZWZpbml0ZSI+PC9hbmltYXRlVHJhbnNmb3JtPjwvY2lyY2xlPjwvc3ZnPg==);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: center;
+}
+.headerBookButton.showLoadingNoPadding.disabled {
+  background-image: none;
+}
+.headerBookButton.showLoadingReplace {
+  cursor: default;
+  background-size: 32px;
+  color: #006179;
+  background-color: #FFF;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjRweCIgIGhlaWdodD0iNjRweCIgIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89InhNaWRZTWlkIiBjbGFzcz0ibGRzLXJvbGxpbmciIHN0eWxlPSJiYWNrZ3JvdW5kOiBub25lOyI+PGNpcmNsZSBjeD0iNTAiIGN5PSI1MCIgZmlsbD0ibm9uZSIgbmctYXR0ci1zdHJva2U9Int7Y29uZmlnLmNvbG9yfX0iIG5nLWF0dHItc3Ryb2tlLXdpZHRoPSJ7e2NvbmZpZy53aWR0aH19IiBuZy1hdHRyLXI9Int7Y29uZmlnLnJhZGl1c319IiBuZy1hdHRyLXN0cm9rZS1kYXNoYXJyYXk9Int7Y29uZmlnLmRhc2hhcnJheX19IiBzdHJva2U9IiMwMDYxNzkiIHN0cm9rZS13aWR0aD0iMTAiIHI9IjM1IiBzdHJva2UtZGFzaGFycmF5PSIxNjQuOTMzNjE0MzEzNDY0MTUgNTYuOTc3ODcxNDM3ODIxMzgiIHRyYW5zZm9ybT0icm90YXRlKDIxNS41MzEgNTAgNTApIj48YW5pbWF0ZVRyYW5zZm9ybSBhdHRyaWJ1dGVOYW1lPSJ0cmFuc2Zvcm0iIHR5cGU9InJvdGF0ZSIgY2FsY01vZGU9ImxpbmVhciIgdmFsdWVzPSIwIDUwIDUwOzM2MCA1MCA1MCIga2V5VGltZXM9IjA7MSIgZHVyPSIxcyIgYmVnaW49IjBzIiByZXBlYXRDb3VudD0iaW5kZWZpbml0ZSI+PC9hbmltYXRlVHJhbnNmb3JtPjwvY2lyY2xlPjwvc3ZnPg==);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: center;
+  background-position-x: center;
+  color: transparent;
+}
+.headerBookButton.showLoadingReplace.disabled {
+  background-image: none;
+}
+.headerBookButton.disabled {
+  color: #fff;
+  background-color: #A8A8A7;
+  border-color: #A8A8A7;
+}
+.headerBookButton.disabled:hover {
+  cursor: not-allowed;
+}
+.headerLayoutLogo {
+  margin-left: 10px;
+  margin-right: auto;
+}
+.headerLayoutLogoLink {
+  display: block;
+}
+.headerLayoutLogoImage {
+  height: 100%;
+  display: block;
+  max-height: 60px;
+}
+@media only screen and (max-width: 800px) {
+  .headerLayoutLogoImage {
+    max-height: 48px;
+  }
+}
+.headerLayoutMenu {
+  display: block;
+}
+.headerLayoutCart {
+  margin-left: 10px;
+}
+.headerLayoutBook {
+  margin-left: 10px;
+}
+.headerLayoutLang {
+  margin-left: 10px;
+}
+.headerLayoutOpen {
+  display: none;
+  margin-left: -10px;
+}
+@media only screen and (max-width: 800px) {
+  .headerLayoutOpen {
+    display: block;
   }
 }
 #standardFooter {
@@ -17565,9 +18331,6 @@ a.cs9HyperLink {
     padding: 0;
     display: block;
   }
-}
-#standardFooter #standardFooterMenu .navItem:hover {
-  background-color: #D0D0D0;
 }
 #standardFooter #standardFooterMenu .navItem a {
   display: inline-block;
