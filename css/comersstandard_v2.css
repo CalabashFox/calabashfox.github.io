@@ -18143,14 +18143,6 @@ a.cs9HyperLink {
     padding: 10px 20px 10px 40px;
   }
 }
-.headerLayout {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  background-color: #F2F2F2;
-  border-bottom: 4px solid #006179;
-  margin-bottom: 20px;
-}
 .headerBookButton {
   display: inline-block;
   padding: 0.5em 0.938em;
@@ -18252,6 +18244,18 @@ a.cs9HyperLink {
 }
 .headerBookButton.disabled:hover {
   cursor: not-allowed;
+}
+.headerLayout {
+  background-color: #F2F2F2;
+  border-bottom: 4px solid #006179;
+}
+.headerLayoutContent {
+  margin: 0 auto;
+  padding: 0 10px;
+  max-width: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 .headerLayoutLogo {
   margin-left: 10px;
