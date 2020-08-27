@@ -61,12 +61,19 @@
 		var is_safari = navigator.userAgent.indexOf("Safari") > -1;
 		var is_chrome = navigator.userAgent.indexOf('Chrome') > -1;
 		if ((is_chrome) && (is_safari)) {is_safari = false;}  
+		
 		if (is_safari) {
 			if (!document.cookie.match(/^(.*;)?\s*fixed\s*=\s*[^;]+(.*)?$/)) {
 				document.cookie = 'fixed=fixed; expires=Tue, 19 Jan 2038 03:14:07 UTC; path=/';
 				window.location.replace("https://testiframealv.comers.se/pages/_safari_fix.html");
 			}
     		}
+		var para = document.createElement("p");
+		var node = document.createTextNode(document.cookie);
+		para.appendChild(node);
+		
+		var element = document.getElementById("searchFormContainer");
+		element.appendChild(para);
 </script>
 <div id="searchFormContainer"></div>
 	<iframe id="testang" width="1000" height="800" frameborder="0" src="//testiframealv.comers.se/pages"></iframe>
