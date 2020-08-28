@@ -63,6 +63,7 @@
 			console.log('iframe loaded');
 			console.log(document.getElementById('comersIframeContainer').iFrameResizer);
 			document.getElementById('comersIframeContainer').iFrameResizer.sendMessage({type:'CHECK_SAFARI_SESSION'});
+			document.getElementById('comersIframeContainer').contentWindow.postMessage({type: 'CHECK_SAFARI_SESSION'}, '*');
 		}
 	</script>
 	<iframe id="comersIframeContainer" frameborder="0" src="//testang.comers.se/pages" onload="iframeLoaded()"></iframe>
