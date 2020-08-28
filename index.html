@@ -60,6 +60,8 @@
 <div id="searchFormContainer"></div>
 	<script type="text/javascript">
 		function iframeLoaded() {
+			console.log('iframe loaded');
+			console.log(document.getElementById('comersIframeContainer').iFrameResizer);
 			document.getElementById('comersIframeContainer').iFrameResizer.sendMessage(event);
 		}
 	</script>
