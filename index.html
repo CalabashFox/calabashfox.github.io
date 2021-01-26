@@ -29,86 +29,35 @@
 	<meta name="twitter:title" content="葫芦葫芦狐狸">
 	<meta name="twitter:description" content="葫芦葫芦狐狸">
 	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
-	<script src="//liframealv.comers.se/pages/v2/js/widget-v2.js" type="text/javascript"></script>
-	<script src="//liframealv.comers.se/pages/js/iframe/comers-iframe-integration.1.0.js?v=1.0" type="text/javascript"></script>
-	<link href="//liframealv.comers.se/pages/v2/css/comersexternal.css" rel="stylesheet" type="text/css" />
+	<script src="//testske.comers.se/pages/v2/js/widget-v2.js" type="text/javascript"></script>
+	<script src="//testske.comers.se/pages/js/iframe/comers-iframe-integration.1.0.js?v=1.0" type="text/javascript"></script>
+	<link href="//testske.comers.se/pages/v2/css/comersexternal.css" rel="stylesheet" type="text/css" />
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css" />
-	<link href="//liframealv.comers.se/pages/v2/css/comersstandard_minicart_v2.css" rel="stylesheet" type="text/css" /><script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script src="//liframealv.comers.se/pages/js/iframeResizer/js/iframeResizer.min.js" type="text/javascript"></script>
+	<link href="//testske.comers.se/pages/v2/css/comersstandard_minicart_v2.css" rel="stylesheet" type="text/css" /><script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="//testske.comers.se/pages/js/iframeResizer/js/iframeResizer.min.js" type="text/javascript"></script>
 	<title> 葫芦葫芦狐狸 </title>
 </head><script type="text/javascript">
 	(function(){
 		ComersIframeIntegration.create({
-		        comersSiteBaseUrl: 'https://liframealv.comers.se',
+		        comersSiteBaseUrl: 'https://testske.comers.se',
 		        bookingPageUrl: '//calabashfox.github.io/archives',
 			cartContainerId: 'comersCartContainer',
 			debug: true
 	        });
 	})();	
-	var $j = jQuery.noConflict();
+	var $j = jQuery.noConflict();/*
 	(function(){
 	SearchFormWidget.create({
 		    containerId: 'searchFormContainer',
 			flow_cd: 'IFRAME',
 			baseUrl: '//liframealv.comers.se'
 		});
-	})();
-	</script><style type="text/css">html {
-	color: blue;}</style><!--
-<script type="text/javascript">
-	(function(){
-		ComersIframeIntegration.create({
-		        comersSiteBaseUrl: 'https://testlek.comers.se',
-		        bookingPageUrl: '//calabashfox.github.io/archives',
-			cartContainerId: 'comersCartContainer',
-			debug: true
-	        });
-	})();	
-	var $j = jQuery.noConflict();
-	</script>
-<script type="text/javascript">
-	(function(){
-	SearchFormWidget.create({
-		    containerId: 'searchFormContainer',
-			flow_cd: 'IFRAME',
-			baseUrl: '//liframealv.comers.se'
-		});
-	})();
-	</script>
-<div id="searchFormContainer"></div>
-	<script type="text/javascript">
-		function iframeLoaded() {
-			console.log('iframe loaded');
-			console.log(document.getElementById('comersIframeContainer').iFrameResizer);
-			document.getElementById('comersIframeContainer').iFrameResizer.sendMessage({type:'CHECK_SAFARI_SESSION'});
-			document.getElementById('comersIframeContainer').contentWindow.postMessage({type: 'CHECK_SAFARI_SESSION'}, '*');
-		}
-	</script>
-	<iframe id="comersIframeContainer" frameborder="0" src="//testang.comers.se/pages" onload="iframeLoaded()"></iframe>-->
-<body><!--
-	<script>
-		var is_safari = navigator.userAgent.indexOf("Safari") > -1;
-		var is_chrome = navigator.userAgent.indexOf('Chrome') > -1;
-		if ((is_chrome) && (is_safari)) {is_safari = false;}  
-		is_safari=true;
-		if (is_safari) {
-			if (!document.cookie.match(/^(.*;)?\s*fixed\s*=\s*[^;]+(.*)?$/)) {
-				document.cookie = 'fixed=fixed; expires=Tue, 19 Jan 2038 03:14:07 UTC; path=/';
-				window.location.replace("https://testang.comers.se/pages/_safari_fix.html");
-			}
-    		}
-		var para = document.createElement("p");
-		var node = document.createTextNode(document.cookie);
-		para.appendChild(node);
-		
-		var element = document.getElementById("searchFormContainer");
-		element.appendChild(para);
-		iFrameResize({log: true}, '#comersIframeContainer');
-</script>-->
-<div id="searchFormContainer"></div>
+	})();*/
+	<iframe id="comersIframeContainer" frameborder="0" src="//testske.comers.se/pages"></iframe>
+<body>
+	<div id="searchFormContainer"></div>
 	<div id="comersCartContainer"></div>
-	<div style="height: 15px; border: 1px solid black;"></div>
-	<!--<script>iFrameResize({log: true}, '#comersIframeContainer');</script>-->
+	<script>iFrameResize({log: true}, '#comersIframeContainer');</script>
 	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
 	<!--
 	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
