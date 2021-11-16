@@ -43,12 +43,18 @@
             offsetXDesktop: 0,
             offsetYDesktop: -50
               });
+         
+						( function(){ 
+							SearchFormWidget.create({
+								containerId: 'searchFormContainer',
+								flow_cd: 'IFRAME',
+								baseUrl: 'https://liframealv.comers.se'
+							});
+						})();
+					
       })();	
    </script>
-   <p>------</p>
-      <div id="comersCartContainer"></div>
-   <p>------</p>
-   <iframe id="comersIframeContainer" frameborder="0" width="650" src="https://liframealv.comers.se"></iframe>
+   <div id="comersCartContainer"></div>
+   <div id="searchFormContainer"></div>
    <body>
-      <script>iFrameResize({log: false, minHeight: 600}, '#comersIframeContainer');</script>
 </html>
