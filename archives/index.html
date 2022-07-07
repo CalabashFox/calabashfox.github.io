@@ -50,12 +50,12 @@
       (function() {
 	try {
 		const element = document.getElementById('anchor');
-		element.innerHTML = element.innerHtml + '<br>' +  window.localStorage.getItem('comersIframeSessionId');
+		element.innerHTML = element.innerHtml + '<br>' +  'page: ' + window.localStorage.getItem('comersIframeSessionId');
 		 document.getElementById('comersIframeContainer').src = 'https://testske.comers.se/pages/alias.logic.search.CustCartEditBooking.action;JSESSIONID=' + window.localStorage.getItem('comersIframeSessionId') + '?externalFrameURL=https://calabashfox.github.io';
 		 iFrameResize({log: false}, '#comersIframeContainer');
 	} catch (error) {
 		const element = document.getElementById('anchor');
-		element.innerHTML = element.innerHtml + '<br>' + error;
+		element.innerHTML = element.innerHtml + '<br>' + 'error: ' + error;
 	}
       })();
    </script>
