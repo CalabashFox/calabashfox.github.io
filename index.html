@@ -23,20 +23,20 @@
       <meta name="twitter:description" content="葫芦葫芦狐狸">
 	   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
       <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
-      <script src="//testske.comers.se/pages/v2/js/widget-v2.js" type="text/javascript"></script>
-      <script src="//testske.comers.se/pages/js/iframe/comers-iframe-integration.1.0.js?v=1.0" type="text/javascript"></script>
-      <link href="//testske.comers.se/pages/v2/css/comersexternal.css" rel="stylesheet" type="text/css" />
+      <script src="//testiframealv.comers.se/pages/v2/js/widget-v2.js" type="text/javascript"></script>
+      <script src="//testiframealv.comers.se/pages/js/iframe/comers-iframe-integration.1.0.js?v=1.0" type="text/javascript"></script>
+      <link href="//testiframealv.comers.se/pages/v2/css/comersexternal.css" rel="stylesheet" type="text/css" />
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css" />
-      <link href="//testske.comers.se/pages/v2/css/comersstandard_minicart_v2.css" rel="stylesheet" type="text/css" />
+      <link href="//testiframealv.comers.se/pages/v2/css/comersstandard_minicart_v2.css" rel="stylesheet" type="text/css" />
       <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-      <script src="//testske.comers.se/pages/js/iframeResizer/js/iframeResizer.js" type="text/javascript"></script>
+      <script src="//testiframealv.comers.se/pages/js/iframeResizer/js/iframeResizer.js" type="text/javascript"></script>
       <title> 葫芦葫芦狐狸 </title>
    </head>
    <script type="text/javascript">
       var $j = jQuery.noConflict();
       (function(){
       	ComersIframeIntegration.create({
-      	        comersSiteBaseUrl: '//testske.comers.se',
+      	        comersSiteBaseUrl: '//testiframealv.comers.se',
       	        bookingPageUrl: '//calabashfox.github.io',
       		cartContainerId: 'comersCartContainer',
       		debug: false,
@@ -45,13 +45,13 @@
               });		
       })();	
    </script>
-   <script src="//testske.comers.se/pages/js/iframeResizer/js/iframeResizer.min.js" type="text/javascript"></script>
+   <script src="//testiframealv.comers.se/pages/js/iframeResizer/js/iframeResizer.min.js" type="text/javascript"></script>
 	<div id="anchor"></div>
 <iframe id="comersIframeContainer" src="" scrolling="no" frameBorder="0"  width="100%" height="1500"></iframe>
 <script type="text/javascript">
 var iframeUrl = sessionStorage.getItem('searchUrl');
 if (iframeUrl === null) {
-	iframeUrl = '//testske.comers.se/pages/?externalFrameURL=https://calabashfox.github.io';
+	iframeUrl = '//testiframealv.comers.se/pages/?externalFrameURL=https://calabashfox.github.io';
 } else {
 	sessionStorage.removeItem('searchUrl');
 }
@@ -61,6 +61,6 @@ iFrameResize({log: false}, '#comersIframeContainer');
 		const element = document.getElementById('anchor');
 		element.innerHTML = element.innerHtml + '<br>' +  'page: ' + window.localStorage.getItem('comersIframeSessionId');
 </script>
-      <iframe id="comersIframeCartHandler" src="https://testske.comers.se/pages/showpage.jsp?page_cd=IFRAMECART&externalFrameURL=//calabashfox.github.io" width="0" height="0">
+      <iframe id="comersIframeCartHandler" src="https://testiframealv.comers.se/pages/showpage.jsp?page_cd=IFRAMECART&externalFrameURL=//calabashfox.github.io" width="0" height="0">
    <body>
 </html>
