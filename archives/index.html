@@ -53,7 +53,6 @@
 		element.innerHTML = element.innerHTML + '<br>' +  'page: ' + window.localStorage.getItem('comersIframeSessionId');
 		 document.getElementById('comersIframeContainer').src = 'https://testiframealv.comers.se/pages/alias.logic.search.CustCartEditBooking.action;JSESSIONID=' + window.localStorage.getItem('comersIframeSessionId') + '?externalFrameURL=https://calabashfox.github.io';
 		 
-		const element = document.getElementById('anchor');
 		element.innerHTML = element.innerHTML + '<br>' +  'source: ' + 'https://testiframealv.comers.se/pages/alias.logic.search.CustCartEditBooking.action;JSESSIONID=' + window.localStorage.getItem('comersIframeSessionId') + '?externalFrameURL=https://calabashfox.github.io';
 		iFrameResize({log: false}, '#comersIframeContainer');
 	} catch (error) {
