@@ -47,8 +47,8 @@
       <div id="comersCartContainer"></div>
    <iframe id="comersIframeContainer" frameborder="0" width="650" src=""></iframe>
    <script type="text/javascript">
-      (function() {
-	try {
+	   window.addEventListener('load', function() {
+		   try {
 		const element = document.getElementById('anchor');
 		element.innerHTML = element.innerHTML + '<br>' +  'page: ' + window.localStorage.getItem('comersIframeSessionId');
 		 document.getElementById('comersIframeContainer').src = 'https://testiframealv.comers.se/pages/alias.logic.search.CustCartEditBooking.action;JSESSIONID=' + window.localStorage.getItem('comersIframeSessionId') + '?externalFrameURL=https://calabashfox.github.io';
@@ -60,7 +60,7 @@
 		const element = document.getElementById('anchor');
 		element.innerHTML = element.innerHTML + '<br>' + 'error: ' + error;
 	}
-      })();
+	   });
    </script>
    <body>
       <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
