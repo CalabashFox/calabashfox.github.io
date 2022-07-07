@@ -44,9 +44,10 @@
       })();	
       var $j = jQuery.noConflict();
    </script>
-   <iframe id="comersIframeContainer" frameborder="0" width="650" src="https://testske.comers.se/pages/alias.logic.search.CustCartEditBooking.action?externalFrameURL=https://calabashfox.github.io"></iframe>
+   <iframe id="comersIframeContainer" frameborder="0" width="650" src=""></iframe>
    <script type="text/javascript">
       (function() {
+         alert(window.localStorage.getItem('comersIframeSessionId'));
          document.getElementById('comersIframeContainer').src = 'https://testske.comers.se/pages/alias.logic.search.CustCartEditBooking.action;JSESSIONID=' + window.localStorage.getItem('comersIframeSessionId') + '?externalFrameURL=https://calabashfox.github.io';
       })();
    </script>
