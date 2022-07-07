@@ -23,20 +23,20 @@
       <meta name="twitter:title" content="葫芦葫芦狐狸">
       <meta name="twitter:description" content="葫芦葫芦狐狸">
       <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
-      <script src="//lske.comers.se/pages/v2/js/widget-v2.js" type="text/javascript"></script>
-      <script src="//lske.comers.se/pages/js/iframe/comers-iframe-integration.1.0.js?v=1.0" type="text/javascript"></script>
-      <link href="//lske.comers.se/pages/v2/css/comersexternal.css" rel="stylesheet" type="text/css" />
+      <script src="//testske.comers.se/pages/v2/js/widget-v2.js" type="text/javascript"></script>
+      <script src="//testske.comers.se/pages/js/iframe/comers-iframe-integration.1.0.js?v=1.0" type="text/javascript"></script>
+      <link href="//testske.comers.se/pages/v2/css/comersexternal.css" rel="stylesheet" type="text/css" />
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css" />
-      <link href="//lske.comers.se/pages/v2/css/comersstandard_minicart_v2.css" rel="stylesheet" type="text/css" />
+      <link href="//testske.comers.se/pages/v2/css/comersstandard_minicart_v2.css" rel="stylesheet" type="text/css" />
       <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-      <script src="//lske.comers.se/pages/js/iframeResizer/js/iframeResizer.min.js" type="text/javascript"></script>
+      <script src="//testske.comers.se/pages/js/iframeResizer/js/iframeResizer.min.js" type="text/javascript"></script>
       <script src="//test.checkout.dibspayment.eu/v1/checkout.js?v=1"></script>
       <title> 葫芦葫芦狐狸 </title>
    </head>
    <script type="text/javascript">
       (function(){
       	ComersIframeIntegration.create({
-      	        comersSiteBaseUrl: 'https://lske.comers.se',
+      	        comersSiteBaseUrl: 'https://testske.comers.se',
       	        bookingPageUrl: '//calabashfox.github.io/archives',
       		cartContainerId: 'comersCartContainer',
       		debug: true
@@ -44,16 +44,16 @@
       })();	
       var $j = jQuery.noConflict();
    </script>
-   <iframe id="comersIframeContainer" frameborder="0" width="650" src="https://lske.comers.se/pages/alias.logic.search.CustCartEditBooking.action?externalFrameURL=https://calabashfox.github.io"></iframe>
+   <iframe id="comersIframeContainer" frameborder="0" width="650" src="https://testske.comers.se/pages/alias.logic.search.CustCartEditBooking.action?externalFrameURL=https://calabashfox.github.io"></iframe>
    <script type="text/javascript">
       (function() {
-         document.getElementById('comersIframeContainer').src = 'https://lske.comers.se/pages/alias.logic.search.CustCartEditBooking.action;JSESSIONID=' + window.localStorage.getItem('comersIframeSessionId') + '?externalFrameURL=https://calabashfox.github.io';
+         document.getElementById('comersIframeContainer').src = 'https://testske.comers.se/pages/alias.logic.search.CustCartEditBooking.action;JSESSIONID=' + window.localStorage.getItem('comersIframeSessionId') + '?externalFrameURL=https://calabashfox.github.io';
       })();
    </script>
    <body>
       <div id="comersCartContainer"></div>
       <script>iFrameResize({log: false}, '#comersIframeContainer');</script>
       <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
-      <iframe id="comersIframeCartHandler" src="https://lske.comers.se/pages/showpage.jsp?page_cd=IFRAMECART&externalFrameURL=//calabashfox.github.io">
+      <iframe id="comersIframeCartHandler" src="https://testske.comers.se/pages/showpage.jsp?page_cd=IFRAMECART&externalFrameURL=//calabashfox.github.io">
    </body>
 </html>
