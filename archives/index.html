@@ -36,7 +36,7 @@
    <script type="text/javascript">
       (function(){
       	ComersIframeIntegration.create({
-      	        comersSiteBaseUrl: 'https://testiframealv.comers.se',
+      	        comersSiteBaseUrl: 'https://testske.comers.se',
       	        bookingPageUrl: '//calabashfox.github.io/archives',
       		cartContainerId: 'comersCartContainer',
       		debug: true
@@ -44,22 +44,10 @@
       })();	
       var $j = jQuery.noConflict();
    </script>
-   <iframe id="comersIframeContainer" frameborder="0" width="650" src="https://testiframealv.comers.se/pages/alias.logic.search.CustCartEditBooking.action"></iframe>
+   <iframe id="comersIframeContainer" frameborder="0" width="650" src="https://testske.comers.se/pages/alias.logic.search.CustCartEditBooking.action"></iframe>
    <body>
-      <div id="searchFormContainer"></div>
       <div id="comersCartContainer"></div>
       <script>iFrameResize({log: false}, '#comersIframeContainer');</script>
       <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
-      <!--
-         <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
-         <script src="//liframealv.comers.se/pages/js/iframeResizer/js/iframeResizer.min.js" type="text/javascript"></script>
-         <script src="https://liframealv.comers.se/pages/js/iframe/comers-iframe-integration.1.0.js"></script>
-         <script type="text/javascript"> (function() { ComersIframeIntegration.create({comersSiteBaseUrl: 'https://liframealv.comers.se', bookingPageUrl: 'https://calabashfox.github.io/', debug: true });})(); </script>
-         <iframe id="comersIframeContainer" src="" style="min-height: 800px; " scrolling="yes" frameBorder="0" width="100%"></iframe>
-         <script type="text/javascript">var iframeUrl = sessionStorage.getItem('searchUrl');if (iframeUrl === null) {iframeUrl = '//liframealv.comers.se/pages/';} else {sessionStorage.removeItem('searchUrl');}document.getElementById('comersIframeContainer').src = iframeUrl;iFrameResize({log: false}, '#comersIframeContainer');</script>
-         <iframe id="comersIframeCartHandler" width="auto" height="0" frameborder="0" src="//testvim.comers.se/pages/showpage.jsp?page_cd=IFRAMECART&externalFrameURL=https://calabashfox.github.io/"></iframe><div id="comersCartContainer"></div>
-         
-         <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script><script src="//testiframealv.comers.se/pages/js/iframeResizer/js/iframeResizer.min.js" type="text/javascript"></script><script src="https://testiframealv.comers.se/pages/js/iframe/comers-iframe-integration.1.0.js"></script><script type="text/javascript"> (function() { ComersIframeIntegration.create({comersSiteBaseUrl: 'https://testiframealv.comers.se', bookingPageUrl: 'https://calabashfox.github.io/', debug: true });})(); </script></div><iframe id="comersIframeContainer" src="" style="min-height: 800px; " scrolling="yes" frameBorder="0" width="100%"></iframe><iframe id="comersIframeCartHandler" src="" scrolling="no" frameBorder="0"></iframe><script type="text/javascript">var iframeUrl = sessionStorage.getItem('searchUrl');if (iframeUrl === null) {iframeUrl = '//testiframealv.comers.se/pages/';} else {sessionStorage.removeItem('searchUrl');}document.getElementById('comersIframeContainer').src = iframeUrl;iFrameResize({log: false}, '#comersIframeContainer');</script><iframe id="comersIframeCartHandler" width="auto" height="0" frameborder="0" src="//testiframealv.comers.se/pages/showpage.jsp?page_cd=IFRAMECART&externalFrameURL=https://calabashfox.github.io/"></iframe><div id="comersCartContainer"></div>
-         -->
    </body>
 </html>
