@@ -51,7 +51,7 @@
 <script type="text/javascript">
 var iframeUrl = sessionStorage.getItem('searchUrl');
 if (iframeUrl === null) {
-	iframeUrl = '//testiframealv.comers.se/pages/?externalFrameURL=https://calabashfox.github.io';
+	iframeUrl = '//testiframealv.comers.se/pages/' + window.localStorage.getItem('comersIframeSessionId') + '?externalFrameURL=https://calabashfox.github.io';
 } else {
 	sessionStorage.removeItem('searchUrl');
 }
