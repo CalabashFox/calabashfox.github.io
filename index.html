@@ -51,15 +51,17 @@
 <script type="text/javascript">
 var iframeUrl = sessionStorage.getItem('searchUrl');
 if (iframeUrl === null) {
+	const sessionId = window.localStorage.getItem('comersIframeSessionId');
+	if (sessionId !== null && typeof sessionId !== 'undefined') {
 	iframeUrl = '//testiframealv.comers.se/pages/' + window.localStorage.getItem('comersIframeSessionId') + '?externalFrameURL=https://calabashfox.github.io';
+	} else {
+	iframeUrl = '//testiframealv.comers.se/pages/?externalFrameURL=https://calabashfox.github.io';
+	}
 } else {
 	sessionStorage.removeItem('searchUrl');
 }
 document.getElementById('comersIframeContainer').src = iframeUrl;
 iFrameResize({log: false}, '#comersIframeContainer');
-	
-		const element = document.getElementById('anchor');
-		element.innerHTML = element.innerHTML + '<br>' +  'page: ' + window.localStorage.getItem('comersIframeSessionId');
 </script>
       <iframe id="comersIframeCartHandler" src="https://testiframealv.comers.se/pages/showpage.jsp?page_cd=IFRAMECART&externalFrameURL=//calabashfox.github.io" width="0" height="0">
    <body>
