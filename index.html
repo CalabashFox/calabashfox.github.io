@@ -54,7 +54,7 @@ var iframeUrl = sessionStorage.getItem('searchUrl');
 if (iframeUrl === null) {
 	const sessionId = window.localStorage.getItem('comersIframeSessionId');
 	if (sessionId !== null && typeof sessionId !== 'undefined') {
-	iframeUrl = '//testiframealv.comers.se/pages/' + window.localStorage.getItem('comersIframeSessionId') + '?externalFrameURL=https://calabashfox.github.io';
+	iframeUrl = '//testiframealv.comers.se/pages/;jsessionid=' + window.localStorage.getItem('comersIframeSessionId') + '?externalFrameURL=https://calabashfox.github.io';
 	} else {
 	iframeUrl = '//testiframealv.comers.se/pages/?externalFrameURL=https://calabashfox.github.io';
 	}
