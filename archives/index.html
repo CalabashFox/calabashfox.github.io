@@ -45,15 +45,12 @@
    </script>
 	<div id="anchor"></div>
       <div id="comersCartContainer"></div>
-   <iframe id="comersIframeContainer" frameborder="0" width="650" src="https://testiframealv.comers.se/pages/alias.logic.search.CustCartEditBooking.action"></iframe>
+   <iframe id="comersIframeContainer" frameborder="0" width="650" src=""></iframe>
    <script type="text/javascript">
 	   window.addEventListener('load', function() {
 		   try {
-		 //document.getElementById('comersIframeContainer').src = 'https://testiframealv.comers.se/pages/alias.logic.search.CustCartEditBooking.action;jsessionid=' + window.localStorage.getItem('comersIframeSessionId') + '?externalFrameURL=https://calabashfox.github.io';
-		 
-		//const element = document.getElementById('anchor');
-		//element.innerHTML = element.innerHTML + '<br>' +  'source: ' + 'https://testiframealv.comers.se/pages/alias.logic.search.CustCartEditBooking.action;jsessionid=' + window.localStorage.getItem('comersIframeSessionId') + '?externalFrameURL=https://calabashfox.github.io';
-		iFrameResize({log: false}, '#comersIframeContainer');
+		 document.getElementById('comersIframeContainer').src = 'https://testiframealv.comers.se/pages/alias.logic.search.CustCartEditBooking.action;jsessionid=' + window.localStorage.getItem('comersIframeSessionId') + '?externalFrameURL=https://calabashfox.github.io';
+		 iFrameResize({log: false}, '#comersIframeContainer');
 	} catch (error) {
 		const element = document.getElementById('anchor');
 		element.innerHTML = element.innerHTML + '<br>' + 'error: ' + error;
