@@ -23,13 +23,13 @@
       <meta name="twitter:description" content="葫芦葫芦狐狸">
 	   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
       <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
-      <script src="//testiframealv.comers.se/pages/v2/js/widget-v2.js" type="text/javascript"></script>
-      <script src="//testiframealv.comers.se/pages/js/iframe/comers-iframe-integration.1.0.js?v=1.1" type="text/javascript"></script>
-      <link href="//testiframealv.comers.se/pages/v2/css/comersexternal.css" rel="stylesheet" type="text/css" />
+      <script src="//liframealv.comers.se/pages/v2/js/widget-v2.js" type="text/javascript"></script>
+      <script src="//liframealv.comers.se/pages/js/iframe/comers-iframe-integration.1.0.js?v=1.1" type="text/javascript"></script>
+      <link href="//liframealv.comers.se/pages/v2/css/comersexternal.css" rel="stylesheet" type="text/css" />
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css" />
-      <link href="//testiframealv.comers.se/pages/v2/css/comersstandard_minicart_v2.css" rel="stylesheet" type="text/css" />
+      <link href="//liframealv.comers.se/pages/v2/css/comersstandard_minicart_v2.css" rel="stylesheet" type="text/css" />
       <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-      <script src="//testiframealv.comers.se/pages/js/iframeResizer/js/iframeResizer.js" type="text/javascript"></script>
+      <script src="//liframealv.comers.se/pages/js/iframeResizer/js/iframeResizer.js" type="text/javascript"></script>
       <title> 葫芦葫芦狐狸 </title>
    </head>
    <script type="text/javascript">
@@ -44,29 +44,11 @@
               });		
       })();	
    </script>
-   <script src="//testiframealv.comers.se/pages/js/iframeResizer/js/iframeResizer.min.js" type="text/javascript"></script>
+   <script src="//liframealv.comers.se/pages/js/iframeResizer/js/iframeResizer.min.js" type="text/javascript"></script>
 	<div id="comersCartContainer"></div>
-	<div id="anchor"></div>
-<iframe id="comersIframeContainer" src="" scrolling="no" frameBorder="0"  width="100%" height="1500"></iframe>
+<iframe id="comersIframeContainer" src="https://liframealv.comers.se/pages/showpage.jsp?page_cd=I.CALENDAR&destination_cd=VBY&fixProductType=true&productType=COT&fixProductPart_cd=false" scrolling="no" frameBorder="0"  width="100%" height="1500"></iframe>
 <script type="text/javascript">
-var iframeUrl = sessionStorage.getItem('searchUrl');
-	try {
-if (iframeUrl === null) {
-	const sessionId = window.localStorage.getItem('comersIframeSessionId');
-	if (sessionId !== null && typeof sessionId !== 'undefined') {
-	iframeUrl = '//testiframealv.comers.se/pages/;jsessionid=' + window.localStorage.getItem('comersIframeSessionId') + '?externalFrameURL=https://calabashfox.github.io';
-	} else {
-	iframeUrl = 'https://liframealv.comers.se/pages/showpage.jsp?page_cd=I.CALENDAR&destination_cd=VBY&fixProductType=true&productType=COT&fixProductPart_cd=false';
-	}
-} else {
-	sessionStorage.removeItem('searchUrl');
-}
-document.getElementById('comersIframeContainer').src = iframeUrl;
 iFrameResize({log: false}, '#comersIframeContainer');
-	} catch(error) {
-	iframeUrl = 'https://liframealv.comers.se/pages/showpage.jsp?page_cd=I.CALENDAR&destination_cd=VBY&fixProductType=true&productType=COT&fixProductPart_cd=false';
-document.getElementById('comersIframeContainer').src = iframeUrl;
-	}
 </script>
       <iframe id="comersIframeCartHandler" src="https://liframealv.comers.se/pages/showpage.jsp?page_cd=I.CALENDAR&destination_cd=VBY&fixProductType=true&productType=COT&fixProductPart_cd=false" width="0" height="0">
    <body>
