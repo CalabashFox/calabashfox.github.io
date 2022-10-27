@@ -56,7 +56,7 @@ if (iframeUrl === null) {
 	if (sessionId !== null && typeof sessionId !== 'undefined') {
 	iframeUrl = '//testiframealv.comers.se/pages/;jsessionid=' + window.localStorage.getItem('comersIframeSessionId') + '?externalFrameURL=https://calabashfox.github.io';
 	} else {
-	iframeUrl = '//testiframealv.comers.se/pages/?externalFrameURL=https://calabashfox.github.io';
+	iframeUrl = 'https://liframealv.comers.se/pages/showpage.jsp?page_cd=I.CALENDAR&destination_cd=VBY&fixProductType=true&productType=COT&fixProductPart_cd=false';
 	}
 } else {
 	sessionStorage.removeItem('searchUrl');
@@ -68,6 +68,6 @@ iFrameResize({log: false}, '#comersIframeContainer');
 document.getElementById('comersIframeContainer').src = iframeUrl;
 	}
 </script>
-      <iframe id="comersIframeCartHandler" src="https://testiframealv.comers.se/pages/showpage.jsp?page_cd=IFRAMECART&externalFrameURL=//calabashfox.github.io" width="0" height="0">
+      <iframe id="comersIframeCartHandler" src="https://liframealv.comers.se/pages/showpage.jsp?page_cd=I.CALENDAR&destination_cd=VBY&fixProductType=true&productType=COT&fixProductPart_cd=false" width="0" height="0">
    <body>
 </html>
