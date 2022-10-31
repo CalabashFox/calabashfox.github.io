@@ -16,24 +16,27 @@
       <title> Test site </title>
    </head>
    <script type="text/javascript">
-		// example code to run after page has been loaded
-		document.addEventListener('DOMContentLoaded', function () {
-			// get reference code from url for springtime.se
-			const ref = new URLSearchParams(window.location.search).get('ref_cd');
-			// links without any referrer will be ignored
-			if (ref !== null) {
-				// get list of all bookable options to Comers
-				const options = document.querySelectorAll('.departure-list option');
 
-				options.forEach(function(option) {
-					// ignore option groups
-					if (typeof option.dataset.bookinglink !== 'undefined') {
-						// append reference code to Comers booking link
-						option.dataset.bookinglink = option.dataset.bookinglink + '&ref_cd=' + ref;
-					}
-				});
-			}
+		// example code to run after page has been loaded
+		document.addEventListener('DOMContentLoaded', function() {
+		    // get campaign reference code from url on springtime.se, can use other parameter name
+		    const ref = new URLSearchParams(window.location.search).get('ref_cd');
+		    // links without any referrer will be ignored
+		    if (ref !== null) {
+			// get list of all bookable options to Comers, may differ in different pages
+			const options = document.querySelectorAll('.departure-list option');
+
+			options.forEach(function(option) {
+			    // ignore option groups
+			    if (typeof option.dataset.bookinglink !== 'undefined') {
+				// append reference code to Comers booking link, must use ref_cd
+				option.dataset.bookinglink = option.dataset.bookinglink + '&ref_cd=' + ref;
+			    }
+			});
+		    }
 		}, false);
+
+
 
 		// test code to simulate navigation
 		function select(selectElement) {
