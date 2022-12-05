@@ -21,24 +21,14 @@
 						m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 				})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 function setupTracking(elem) {
-					const sourceDomain = 'calabashfox.github.io';
-					const destinationDomain = 'liframealv.comers.se';
-					ga('create', 'UA-110454292-1', 'auto', { allowLinker: true });
-					ga('require', 'linker');
-					ga('linker:autoLink', [destinationDomain]);
+					ga('create', 'UA-66097-1', 'auto');
 					if (typeof ga === 'function') {
 						ga(function (tracker) {
 							// Gets the client ID of the default tracker.
 							var clientId = tracker.get('clientId');
 							// Sends the client ID to the window inside the destination frame.
-							const trackerOptions = {
-								clientId: clientId,
-								allowLinker: true,
-								sourceDomain: sourceDomain,
-								destinationDomain: destinationDomain
-							};
-							elem.contentWindow.postMessage(JSON.stringify(trackerOptions), 'https://liframealv.comers.se');
-							console.log("tracker: ", JSON.stringify(trackerOptions));
+							elem.contentWindow.postMessage(clientId, 'https://liframealv.comers.se');
+							console.log(clientId);
 						});
 					}
 				}
