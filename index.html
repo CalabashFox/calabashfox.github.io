@@ -28,7 +28,6 @@ function setupTracking(elem) {
 							var clientId = tracker.get('clientId');
 							// Sends the client ID to the window inside the destination frame.
 							elem.contentWindow.postMessage(clientId, 'https://testdemo.comers.se');
-							ga('send', 'pageview');
 						});
 					}
 				}
