@@ -21,13 +21,20 @@
 						m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 				})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 function setupTracking(elem) {
-					ga('create', 'UA-66097-6', 'auto');
+					ga('create', 'UA-66097-6', {allowLinker: true});
+					ga('require', 'linker');
+					ga('linker:autoLink', ['demo.comers.se']);
 					if (typeof ga === 'function') {
 						ga(function (tracker) {
 							// Gets the client ID of the default tracker.
 							var clientId = tracker.get('clientId');
 							// Sends the client ID to the window inside the destination frame.
-							elem.contentWindow.postMessage(clientId, 'https://demo.comers.se');
+							elem.contentWindow.postMessage(JSON.stringify({
+								clientId: clientId,
+								allowLinker: true,
+								sourceDomain: 'calabashfox.github.io',
+								destinationDomain: 'demo.comers.se'
+							}), 'https://demo.comers.se');
 							console.log(clientId);
 						});
 					}
