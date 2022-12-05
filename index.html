@@ -36,6 +36,7 @@ function setupTracking(elem) {
 								destinationDomain: 'testdemo.comers.se'
 							}), 'https://testdemo.comers.se');
 							console.log(clientId);
+							ga('send', 'pageview');
 						});
 					}
 				}
