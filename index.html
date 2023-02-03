@@ -14,25 +14,27 @@
       <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.5.0" />
       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
       <title> Test site </title>
+<script type="text/javascript" src="//liframealv.comers.se/pages/js/iframe/comers-iframe-integration.1.0.js" id="comers-iframe-integration-js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js" id="vue-widget-js"></script>
+<script type="text/javascript" src="//liframealv.comers.se/pages/v2/js/widget-v2.min.js" id="comers-widget-js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" id="comers-jquery-js"></script>
+<script type="text/javascript" src="//liframealv.comers.se/pages/js/iframeResizer/js/iframeResizer.min.js" id="iframe-resizer-js"></script>
+
+
+<link rel="stylesheet" id="comers-external-css" href="//liframealv.comers.se/pages/org/ALV/css/alv_comersexternal.css" media="all">
+<link rel="stylesheet" id="comers-minicart-css" href="//liframealv.comers.se/pages/org/ALV/css/alv_comersstandard_minicart_v2.css" media="all">
+<link rel="stylesheet" id="comers-icons-css" href="//fonts.googleapis.com/icon?family=Material+Icons&ver=5.8.4" media="all">
    </head>
-   <script type="text/javascript">
-				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-							(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-						m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-				})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-function setupTracking(elem) {
-					ga('create', 'UA-66097-6', 'auto');
-					if (typeof ga === 'function') {
-						ga(function (tracker) {
-							// Gets the client ID of the default tracker.
-							var clientId = tracker.get('clientId');
-							// Sends the client ID to the window inside the destination frame.
-							elem.contentWindow.postMessage(clientId, 'https://testdemo.comers.se');
-						});
-					}
-				}
-		 
-   </script>
-	<iframe onload="setupTracking(this)" src="https://testdemo.comers.se" width="100%" height="500"></iframe>
+	<div> test</div><script type="text/javascript">
+(function() {
+    SearchFormWidget.create({
+        containerId: 'searchFormContainer',
+        flow_cd: 'IFRAME',
+        baseUrl: '//liframealv.comers.se'
+    });
+})();
+</script>
+<div id="searchFormContainer"></div>
+	<div> test</div>
    <body>
 </html>
