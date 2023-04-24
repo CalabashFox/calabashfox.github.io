@@ -25,17 +25,20 @@
 <link rel="stylesheet" id="comers-minicart-css" href="//liframealv.comers.se/pages/org/ALV/css/alv_comersstandard_minicart_v2.css" media="all">
 <link rel="stylesheet" id="comers-icons-css" href="//fonts.googleapis.com/icon?family=Material+Icons&ver=5.8.4" media="all">
    </head>
-	<div> test</div><script type="text/javascript">
-var $j = jQuery.noConflict();
-(function() {
-    SearchFormWidget.create({
-        containerId: 'searchFormContainer',
-        flow_cd: 'IFRAME',
-        baseUrl: '//liframealv.comers.se'
-    });
-})();
-</script>
-<div id="searchFormContainer"></div>
-	<div> test</div>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-J53BK741JF"></script>
+	<script type="text/javascript">
+		function setupTrackingGA4() {
+			gtag('get', 'G-J53BK741JF', 'client_id', function(clientId) {
+				console.log(clientId);
+				const frameWindow = document.getElementById('test').contentWindow;
+				frameWindow.postMessage(clientId, '//liframealv.comers.se/pages');
+			});
+		}
+		document.addEventListener("DOMContentLoaded", function() {
+		    setupTrackingGA4();
+		});
+	</script>
+	
+	<iframe id="test" src="https://liframealv.comers.se"></iframe>
    <body>
 </html>
