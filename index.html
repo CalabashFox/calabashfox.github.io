@@ -30,15 +30,13 @@
 		window.dataLayer = window.dataLayer || [];
 		function gtag(){dataLayer.push(arguments);}
 		function setupTrackingGA4() {
-			console.log('create tracking');
 			gtag('js', new Date());
 			gtag('config', 'G-J53BK741JF', {
 					'cookie_flags': 'SameSite=None;Secure',
-					'debug_mode': false
+					'debug_mode': true
 				});
 			
 			gtag('get', 'G-J53BK741JF', 'client_id', function(clientId) {
-				console.log('get client_id', clientId);
 				const frameWindow = document.getElementById('test').contentWindow;
 				frameWindow.postMessage(clientId, 'https://liframealv.comers.se');
 			});
