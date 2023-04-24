@@ -27,7 +27,12 @@
    </head>
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-J53BK741JF"></script>
 	<script type="text/javascript">
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
 		function setupTrackingGA4() {
+			gtag('js', new Date());
+			gtag('config', 'G-J53BK741JF');
+			
 			gtag('get', 'G-J53BK741JF', 'client_id', function(clientId) {
 				console.log(clientId);
 				const frameWindow = document.getElementById('test').contentWindow;
