@@ -41,11 +41,15 @@
 		
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-J53BK741JF"></script>
 		<script type="text/javascript">
+			let comersGATrackerClientId = 0;
 			window.dataLayer = window.dataLayer || [];
 			function gtag(){
 				dataLayer.push(arguments);
 			}
 			function setupTrackingGA4() {
+				if (comersGATrackerClientId !== 0) {
+					return;
+				}
 				gtag('js', new Date());
 				gtag('config', 'G-J53BK741JF', {
 					'cookie_flags': 'SameSite=None;Secure',
@@ -54,6 +58,7 @@
 
 				gtag('get', 'G-J53BK741JF', 'client_id', function(clientId) {
 					console.log('tracker created', clientId);
+					comersGATrackerClientId = clientId;
 					const frameWindow = document.getElementById('test').contentWindow;
 					frameWindow.postMessage(clientId, 'https://liframealv.comers.se');
 				});
