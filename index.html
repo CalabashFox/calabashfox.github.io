@@ -46,8 +46,13 @@
 			function gtag(){
 				dataLayer.push(arguments);
 			}
+			function syncTracking() {
+				const frameWindow = document.getElementById('test').contentWindow;
+				frameWindow.postMessage(clientId, 'https://liframealv.comers.se');
+			}
 			function setupTrackingGA4() {
 				if (comersGATrackerClientId !== 0) {
+					syncTracking();
 					return;
 				}
 				gtag('js', new Date());
@@ -59,8 +64,7 @@
 				gtag('get', 'G-J53BK741JF', 'client_id', function(clientId) {
 					console.log('tracker created', clientId);
 					comersGATrackerClientId = clientId;
-					const frameWindow = document.getElementById('test').contentWindow;
-					frameWindow.postMessage(clientId, 'https://liframealv.comers.se');
+					syncTracking();
 				});
 			}
 			document.addEventListener("DOMContentLoaded", function() {
