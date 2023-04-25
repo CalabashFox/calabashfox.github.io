@@ -48,7 +48,7 @@
 			}
 			function syncTracking() {
 				const frameWindow = document.getElementById('test').contentWindow;
-				frameWindow.postMessage(clientId, 'https://liframealv.comers.se');
+				frameWindow.postMessage(comersGATrackerClientId, 'https://liframealv.comers.se');
 			}
 			function setupTrackingGA4() {
 				if (comersGATrackerClientId !== 0) {
