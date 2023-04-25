@@ -44,6 +44,7 @@
 			let comersGATrackerClientId = 0;
 			window.dataLayer = window.dataLayer || [];
 			function gtag(){
+				console.log('parent', arguments);
 				dataLayer.push(arguments);
 			}
 			function syncTracking() {
