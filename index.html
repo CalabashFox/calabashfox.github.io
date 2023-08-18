@@ -1,33 +1,51 @@
 <!doctype html>
 <html class="theme-next mist use-motion">
-	<head>
-	
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-		<meta http-equiv="Cache-Control" content="no-transform" />
-		<meta http-equiv="Cache-Control" content="no-siteapp" />
-		<meta name="google-site-verification" content="rFO2stTPlHBpPsZOs8e16xTM1ltF1VVFrODq92K3Hf8" />
-		<link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
-		<link href="//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-		<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
-		<link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
-		<meta name="keywords" content="Hemuio, CalabashFox" />
-		<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.5.0" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-		<title> Test site </title>
-		<script type="text/javascript" src="//testiframealv.comers.se:8443/pages/js/iframe/comers-iframe-integration.1.0.js" id="comers-iframe-integration-js"></script>
-		<script type="text/javascript" src="//cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js" id="vue-widget-js"></script>
-		<script type="text/javascript" src="//testiframealv.comers.se:8443/pages/v2/js/widget-v2.min.js" id="comers-widget-js"></script>
-		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" id="comers-jquery-js"></script>
-		<script type="text/javascript" src="//testiframealv.comers.se:8443/pages/js/iframeResizer/js/iframeResizer.min.js" id="iframe-resizer-js"></script>
-
-
-		<link rel="stylesheet" id="comers-external-css" href="//testiframealv.comers.se:8443/pages/org/ALV/css/alv_comersexternal.css" media="all">
-		<link rel="stylesheet" id="comers-minicart-css" href="//testiframealv.comers.se:8443/pages/org/ALV/css/alv_comersstandard_minicart_v2.css" media="all">
-		<link rel="stylesheet" id="comers-icons-css" href="//fonts.googleapis.com/icon?family=Material+Icons&ver=5.8.4" media="all">
-	</head>	
-	<body>
-
-		<iframe id="test" src="https://testiframealv.comers.se:8443" width="100%" height="600"></iframe>
-	</body>	
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+      <meta http-equiv="Cache-Control" content="no-transform" />
+      <meta http-equiv="Cache-Control" content="no-siteapp" />
+      <meta name="google-site-verification" content="rFO2stTPlHBpPsZOs8e16xTM1ltF1VVFrODq92K3Hf8" />
+      <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+      <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+      <link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+      <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
+      <meta name="keywords" content="Hemuio, CalabashFox" />
+      <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.5.0" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <title> Test site </title>
+      <script type="text/javascript" src="//liframealv.comers.se/pages/js/iframe/comers-iframe-integration.1.0.js" id="comers-iframe-integration-js"></script>
+      <script type="text/javascript" src="//unpkg.com/vue@3/dist/vue.esm-browser.js" id="vue-widget-js"></script>
+      <script type="text/javascript" src="//liframealv.comers.se/pages/v2/js/widget-v2.min.js" id="comers-widget-js"></script>
+      <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" id="comers-jquery-js"></script>
+      <script type="text/javascript" src="//liframealv.comers.se/pages/js/iframeResizer/js/iframeResizer.min.js" id="iframe-resizer-js"></script>
+      <link rel="stylesheet" id="comers-external-css" href="//liframealv.comers.se/pages/org/ALV/css/alv_comersexternal.css" media="all">
+      <link rel="stylesheet" id="comers-minicart-css" href="//liframealv.comers.se/pages/org/ALV/css/alv_comersstandard_minicart_v2.css" media="all">
+      <link rel="stylesheet" id="comers-icons-css" href="//fonts.googleapis.com/icon?family=Material+Icons&ver=5.8.4" media="all">
+   </head>
+   <body>
+      <script type='text/javascript'>
+         (function() {
+             ComersIframeIntegration.create({
+                 comersSiteBaseUrl: '//liframealv.comers.se',
+                 bookingPageUrl: '//calabashfox.github.io/',
+                 debug: true,
+                 cartContainerId: 'comersCartContainer'
+             });
+         })()
+         var $j = jQuery.noConflict();
+      </script>
+      <div id="comersCartContainer"></div>
+      <script type="text/javascript">
+         (function() {
+             SearchFormWidget.create({
+                 containerId: 'searchFormContainer',
+                 flow_cd: 'IFRAME',
+                 baseUrl: '//liframealv.comers.se'
+             });
+         })();
+      </script>
+      <div id="searchFormContainer"></div>
+      <iframe id="test" src="https://liframealv.comers.se" width="100%" height="600"></iframe>
+   </body>
 </html>
