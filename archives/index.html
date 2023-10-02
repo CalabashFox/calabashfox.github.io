@@ -24,19 +24,19 @@
       <meta name="twitter:title" content="葫芦葫芦狐狸">
       <meta name="twitter:description" content="葫芦葫芦狐狸">
       <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
-      <script src="//testiframealv.comers.se/pages/v2/js/widget-v2.min.js" type="text/javascript"></script>
-      <script src="//testiframealv.comers.se/pages/js/testiframe/comers-testiframe-integration.1.0.js?v=1.1" type="text/javascript"></script>
-   <link rel="stylesheet" id="comers-external-css" href="//testiframealv.comers.se/pages/org/ALV/css/alv_comersexternal.css" media="all">
-   <link rel="stylesheet" id="comers-minicart-css" href="//testiframealv.comers.se/pages/org/ALV/css/alv_comersstandard_minicart_v2.css" media="all">
+      <script src="//liframealv.comers.se/pages/v2/js/widget-v2.min.js" type="text/javascript"></script>
+      <script src="//liframealv.comers.se/pages/js/iframe/comers-liframe-integration.1.0.js?v=1.1" type="text/javascript"></script>
+   <link rel="stylesheet" id="comers-external-css" href="//liframealv.comers.se/pages/org/ALV/css/alv_comersexternal.css" media="all">
+   <link rel="stylesheet" id="comers-minicart-css" href="//liframealv.comers.se/pages/org/ALV/css/alv_comersstandard_minicart_v2.css" media="all">
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css" />
       <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-      <script src="//testiframealv.comers.se/pages/js/testiframeResizer/js/testiframeResizer.min.js" type="text/javascript"></script>
+      <script src="//liframealv.comers.se/pages/js/liframeResizer/js/liframeResizer.min.js" type="text/javascript"></script>
       <title> 葫芦葫芦狐狸 </title>
    </head>
    <script type="text/javascript">
       (function(){
-      	ComerstestiframeIntegration.create({
-      	        comersSiteBaseUrl: 'https://testiframealv.comers.se',
+      	ComersliframeIntegration.create({
+      	        comersSiteBaseUrl: 'https://liframealv.comers.se',
       	        bookingPageUrl: '//calabashfox.github.io/archives',
       		debug: true
               });
@@ -45,12 +45,12 @@
    </script>
 	<div id="anchor"></div>
       <div id="comersCartContainer"></div>
-   <testiframe id="comerstestiframeContainer" frameborder="0" width="650" src=""></testiframe>
+   <liframe id="comersliframeContainer" frameborder="0" width="650" src=""></liframe>
    <script type="text/javascript">
 	   window.addEventListener('load', function() {
 		   try {
-		 document.getElementById('comerstestiframeContainer').src = 'https://testiframealv.comers.se/pages/alias.logic.search.CustCartEditBooking.action;jsessionid=' + window.localStorage.getItem('comerstestiframeSessionId') + '?externalFrameURL=https://calabashfox.github.io';
-		 testiframeResize({log: false}, '#comerstestiframeContainer');
+		 document.getElementById('comersliframeContainer').src = 'https://liframealv.comers.se/pages/alias.logic.search.CustCartEditBooking.action;jsessionid=' + window.localStorage.getItem('comersliframeSessionId') + '?externalFrameURL=https://calabashfox.github.io';
+		 liframeResize({log: false}, '#comersliframeContainer');
 	} catch (error) {
 		const element = document.getElementById('anchor');
 		element.innerHTML = element.innerHTML + '<br>' + 'error: ' + error;
@@ -59,6 +59,6 @@
    </script>
    <body>
       <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
-      <testiframe id="comerstestiframeCartHandler" src="https://testiframealv.comers.se/pages/showpage.jsp?page_cd=testiframeCART&externalFrameURL=//calabashfox.github.io" width="0" height="0">
+      <liframe id="comersliframeCartHandler" src="https://liframealv.comers.se/pages/showpage.jsp?page_cd=liframeCART&externalFrameURL=//calabashfox.github.io" width="0" height="0">
    </body>
 </html>
