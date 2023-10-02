@@ -45,12 +45,12 @@
    </script>
 	<div id="anchor"></div>
       <div id="comersCartContainer"></div>
-   <iframe id="comersIframeContainer" frameborder="0" width="650" src=""></iframe>
+   <iframe id="comersIframeContainer" frameborder="0" width="100%" src=""></iframe>
    <script type="text/javascript">
 	   window.addEventListener('load', function() {
 		   try {
 		 document.getElementById('comersIframeContainer').src = 'https://liframealv.comers.se/pages/alias.logic.search.CustCartEditBooking.action;jsessionid=' + window.localStorage.getItem('comersiframeSessionId') + '?externalFrameURL=https://calabashfox.github.io';
-		 iframeResize({log: true}, '#comersIframeContainer');
+		 iFrameResize({log: true}, '#comersIframeContainer');
 	} catch (error) {
 		const element = document.getElementById('anchor');
 		element.innerHTML = element.innerHTML + '<br>' + 'error: ' + error;
