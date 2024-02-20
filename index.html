@@ -39,7 +39,7 @@
              ComersIframeIntegration.create({
                  comersSiteBaseUrl: '//testiframealv.comers.se',
                  bookingPageUrl: '//calabashfox.github.io/archives',
-                 debug: true,
+                 debug: false,
                  cartContainerId: 'comersCartContainer'
              });
          })()
@@ -49,11 +49,13 @@
 <script src="//testiframealv.comers.se/pages/js/iframeResizer/js/iframeResizer.min.js" type="text/javascript"></script>
       <script type="text/javascript">
 function setupTrackingGA() {
+   console.log('setupTrackingGA');
     if (typeof ga === 'function') {
         ga(function (tracker) {
             const clientId = tracker.get('clientId');
+   console.log('parent client id:', clientId);
             const frameWindow = document.getElementById('comersIframeContainer').contentWindow;
-            frameWindow.postMessage(clientId, '//testiframealv.comers.se/pages/showpage.jsp?externalFrameURL=//https://calabashfox.github.io/');
+            frameWindow.postMessage(clientId, '//testiframealv.comers.se?externalFrameURL=//calabashfox.github.io/');
         });
     }
 }
